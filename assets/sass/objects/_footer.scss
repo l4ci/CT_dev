@@ -1,0 +1,31 @@
+footer{
+	background: #FBFBFA;
+	border-top: 1px solid #C4CBCC;
+	margin-top: 30px;
+
+	.footer {
+		@extend .clearfix;
+		margin: 0;
+		padding: 0;
+
+	  li {
+	    float: left;
+	    list-style: none;
+	    @include font-size(14px);
+	    line-height: 60px;
+
+	    a{
+	    	color: #666;
+	    	display: block;
+	    	padding: 0 15px;
+
+	    	&:hover{
+	    		color: darken(#666,20%);
+	    	}
+	    }
+	  }
+	}
+	.copyright{
+
+	}
+}

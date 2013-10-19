@@ -1,0 +1,1 @@
+jQuery(document).ready(function(e){e(".tabs li").click(function(){e(".tabs li").removeClass("active");e(this).addClass("active");var t=e(this).data("open");e(".tabs_content li").hide();e(".tabs_content").find("[data-id='"+t+"']").show()})});

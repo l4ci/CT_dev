@@ -1,0 +1,219 @@
+/**
+ *
+ * mGrid
+ * Basic responsive mobile first x-column grid system.
+ *
+ * @url https://github.com/l4ci/mGrid
+ * @author Volker Otto <hello@volkerotto.net>
+ *
+ **/
+
+$grid-columns : 12 	    !default; 	// 12, 16, whatever you like
+$grid-gutter  : 30px    !default; 	// px only here
+
+/**
+ * Breakpoints
+ */
+
+// Define min width
+$breakpoint-s-min:   500px  !default;
+$breakpoint-m-min:   750px  !default;
+$breakpoint-l-min:  1000px  !default;
+$breakpoint-xl-min: 1500px  !default;
+
+// Calculate max width
+$breakpoint-xs-max: $breakpoint-s-min - 1;
+$breakpoint-s-max: $breakpoint-m-min - 1;
+$breakpoint-m-max: $breakpoint-l-min - 1;
+$breakpoint-l-max: $breakpoint-xl-min - 1;
+
+/**
+ * Calculate column width in %
+ * @param  {integer} $columns
+ * @return {integer} %
+ */
+@function calccol($columns){
+  @return (100%/$grid-columns)*$columns;
+}
+
+*{
+  &,&:before,&:after{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+// Fix IE10 in Windows (Phone) 8 Device-Width Bug
+// Source: http://timkadlec.com/2013/01/windows-phone-8-and-device-width/
+@-ms-viewport {
+  width: device-width;
+}
+
+.container{
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.row {
+  display:block;
+  width: 100%;
+  margin: 0 0;
+  padding: 0 0;
+  text-align: left;
+  vertical-align: top;
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  & > .row{
+    overflow: hidden;
+    margin:0 0;
+  }
+}
+
+[class*='col-'] {
+  position: relative;
+  min-height: 1px;
+  text-align: left;
+  display: block;
+  float: left;
+  margin: 0 0;
+  padding-right: $grid-gutter;
+
+  .row &:last-of-type {
+    padding-right: 0;
+  }
+}
+
+
+/**
+ * Default, Extra Small Devices
+ * (Phones)
+ */
+@for $i from 1 through $grid-columns {
+  .col-#{$i} {
+  	width: calccol($i);
+    @if $i == $grid-columns { padding-right:0; }
+  }
+  .xs-col-#{$i} {
+    width: calccol($i);
+    @media (max-width: $breakpoint-xs-max){
+	    @if $i == $grid-columns { padding-right:0; }
+	  }
+  }
+}
+
+.hide-on-xs{
+  display: none;
+}
+.show-on-xs{
+  display: block;
+}
+
+/**
+ * Small devices
+ * (tablets, big smartphones)
+ */
+@media (min-width: $breakpoint-s-min){
+  .container{
+    max-width: 100%;
+  }
+  .hide-on-s{
+    display: none;
+  }
+  .show-on-s{
+    display: block;
+  }
+
+  @for $i from 1 through $grid-columns {
+    .s-col-#{$i} {
+      width: calccol($i);
+      @media (max-width: $breakpoint-s-max){
+      	@if $i == $grid-columns { padding-right:0; }
+      }
+    }
+  }
+}
+
+/**
+ * Medium devices
+ * (laptop, tablets)
+ */
+@media (min-width: $breakpoint-m-min){
+
+  .container{
+    max-width: 800px;
+  }
+
+  .hide-on-m{
+    display: none;
+  }
+  .show-on-m{
+    display: block;
+  }
+
+  @for $i from 1 through $grid-columns {
+    .m-col-#{$i} {
+      width: calccol($i);
+      @media (max-width: $breakpoint-m-max){
+	      @if $i == $grid-columns { padding-right:0; }
+	    }
+    }
+  }
+}
+
+/**
+ * Medium devices
+ * (desktops, 992px and up)
+ */
+@media (min-width: $breakpoint-l-min){
+
+  .container{
+    max-width: 1000px;
+  }
+
+  .hide-on-l{
+    display: none;
+  }
+  .show-on-l{
+    display: block;
+  }
+
+  @for $i from 1 through $grid-columns {
+    .l-col-#{$i} {
+    	width: calccol($i);
+    	@media (max-width: $breakpoint-l-max){
+      	@if $i == $grid-columns { padding-right:0; }
+      }
+    }
+	}
+}
+
+/**
+ * Large devices
+ * (large desktops)
+ */
+@media (min-width: $breakpoint-xl-min){
+
+  .container{
+    max-width: 1400px;
+  }
+
+  .hide-on-xl{
+    display: none;
+  }
+  .show-on-xl{
+    display: block;
+  }
+
+  @for $i from 1 through $grid-columns {
+    .xl-col-#{$i} {
+    	width: calccol($i);
+      @if $i == $grid-columns { padding-right:0; }
+    }
+	}
+}

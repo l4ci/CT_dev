@@ -1,0 +1,75 @@
+//
+// Typography
+// --------------------------------------------------
+
+p {
+  margin: 0 0 ($base-line-height / 2);
+}
+
+.small  {
+	font-size: 85%;
+}
+
+cite {
+	font-style: normal;
+}
+
+/**
+ * Headings
+ *
+ * As per: csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css
+ *
+ * When we define a heading we also define a corresponding class to go with it.
+ * This allows us to apply, say, `class=h1` to a `h3`; a double-stranded
+ * heading hierarchy.
+ */
+h1,.h1{
+  @include font-size($size-h1);
+  margin: $base-line-height 0 $base-line-height;
+}
+h2,.h2{
+  @include font-size($size-h2);
+  margin: ($base-line-height / 2) 0 $base-line-height;
+}
+h3,.h3{
+  @include font-size($size-h3);
+  margin: ($base-line-height / 2) 0 $base-line-height;
+}
+h4,.h4{
+  @include font-size($size-h4);
+  margin: ($base-line-height / 2) 0 $base-line-height;
+}
+h5,.h5{
+  @include font-size($size-h5);
+  margin: ($base-line-height / 2) 0 $base-line-height;
+}
+h6,.h6{
+  @include font-size($size-h6);
+  margin: ($base-line-height / 2) 0 $base-line-height;
+}
+
+/**
+ * A series of classes for setting massive type; for use in heroes, mastheads,
+ * promos, etc.
+ */
+.lead{
+  @include font-size($size-lead);
+  margin: 0 0 $base-line-height;
+}
+.hero{
+  @include font-size($size-hero);
+}
+
+/**
+ * Link colors inside headlines
+ */
+.h1 a,
+.h2 a,
+.h3 a,
+.h4 a,
+.h5 a,
+.h6 a,
+.lead a,
+.hero a{
+  color: inherit;
+}

@@ -1,0 +1,55 @@
+/**
+ * Colors
+ */
+$color-primary:          #333!default;
+$color-secondary:        #333!default;
+$color-tertiary:         #333!default;
+
+$color-text:             #666!default;
+$color-text-light:       #999!default;
+
+$color-input:            #666!default;
+$color-link:             #666!default;
+$color-ui:               #dedede!default;
+
+$color-error:            red!default;
+$color-success:          green!default;
+$color-background:       #fff!default;
+
+/**
+ * Custom Selection
+ */
+$color-selection-background: #333!default;
+$color-selection-text:       #fff!default;
+
+/**
+ * Font families
+ */
+$font-family-primary:    'Source Sans Pro', "Helvetica Neue", Arial, sans-serif!default;
+$font-family-secondary:  'Source Sans Pro', "Helvetica Neue", Arial, sans-serif!default;
+$font-family-tertiary:   'Source Sans Pro', "Helvetica Neue", Arial, sans-serif!default;
+$font-family-input:      "Menlo", monospace;
+
+/**
+ * Font sizes
+ */
+$base-font-size:         16px!default;
+$base-line-height:       24px!default;
+
+$size-hero:              96px!default;
+$size-lead:              32px!default;
+
+$size-h1:                36px!default;
+$size-h2:                30px!default;
+$size-h3:                24px!default;
+$size-h4:                20px!default;
+$size-h5:                16px!default;
+$size-h6:                14px!default;
+
+$size-milli:             12px!default;
+$size-micro:             10px!default;
+
+/**
+ * Misc
+ */
+$border-radius:          3px!default;
