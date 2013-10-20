@@ -10,6 +10,7 @@
 @import "ext/normalize"; 		// normalize.css
 @import "ext/grid";
 
+
 /**
  * Google Webfonts
  */
@@ -28,7 +29,6 @@
 @import "base/typography";
 @import "base/forms";
 @import "base/buttons";
-@import "base/tabs";
 
 /**
  * Load all objects
@@ -36,3 +36,9 @@
 @import "objects/nav";
 @import "objects/content";
 @import "objects/footer";
+
+
+/**
+ * More Extensions
+ */
+@import "ext/tabs";

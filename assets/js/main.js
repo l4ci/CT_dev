@@ -2,12 +2,19 @@ jQuery( document ).ready(function( $ ) {
   // Code using $ as usual goes here.
 
   // TABS
-  $('.tabs li').click(function(){
-		$('.tabs li').removeClass('active');
+  $('.tabs li a').click(function(e){
+		e.preventDefault();
+
+		var getContainer		= $(this).closest('.tabs');
+		var getContainerID	= getContainer.data('tab');
+		var targetContainer = $('.tabs_content[data-tab="' + getContainerID + '"]');
+		var getTabHref			= $(this).attr('href');
+
+		$(getContainer).find('li a').removeClass('active');
 		$(this).addClass('active');
-		var open = $(this).data('open');
-		$('.tabs_content li').hide();
-		$('.tabs_content').find("[data-id='" + open + "']").show();
+
+		$(targetContainer).find('li').removeClass('active');
+		$(targetContainer).find("[data-id='" + getTabHref + "']").addClass('active');
   });
 
 });
