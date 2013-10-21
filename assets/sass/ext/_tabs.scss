@@ -21,11 +21,15 @@ ul.tabs{
 			text-decoration: none;
 
 			&:hover{
+				border-color: $color-text-light;
+				border-bottom: none;
 				background: #fff;
+				color: #333;
 			}
 
 			&.active{
 				background: #fff;
+				color: #333;
 				border-bottom: 1px solid #fff;
 			}
 		}

@@ -1,12 +1,27 @@
 header{
 	background: #40454F;
+
+	.logo{
+		display: block;
+		height: 40px;
+		width: 85px;
+		margin:12px 40px 0 0;
+		background: url('../img/logo_mockup.png') no-repeat;
+		background-size:100%;
+		float: left;
+	}
 }
 
 nav{
+	@extend .clearfix;
+
 	.nav {
-		@extend .clearfix;
 		margin: 0;
 		padding: 0;
+
+		&.right{
+			float: right;
+		}
 
 	  li {
 	    float: left;

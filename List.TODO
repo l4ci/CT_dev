@@ -1,8 +1,45 @@
 CT_dev:
-  ☐ Cups erstellen
-    ☐ Anmeldefrist
-    ☐ Start/End Datum
-    ☐ Twitch.tv Stream embed
-    ☐ Verschiedene Formate je nach Anzahl der Spieler
-  ☐ Spieler können/müssen sich anmelden per Social Media (fb, twitter, g+, steam,origin?) 
-    ☐ Profil
+
+ ☐ Registrierung eines Spielerprofils (SocialMedia Connect)
+ 	Name, Nick, Email, Steam/Origin/Twitch.tv , Avatar, Alter,
+ 	 ☐ Opt-In
+
+ ☐ Jeder Spieler kann Turniere anlegen
+ ☐ Unterschiedliche Turnierformen Formen
+ 	Turnier - Kurzes Event
+ 	Cup - Längeres Event
+ 	Ranking - Jährliches/Halb/Vierteljährliche Liste
+ ☐ Kein Registrierungszwang für Mitspieler
+ 	Es reicht wenn sich einer Anmeldet und das Turnier erstellt -> alle weiteren Spieler werden angelegt (optional mit Email-Opt-in)
+
+Unterschiedliche Bracket Formen: http://www.printyourbrackets.com/
+
+Table Sortierung: http://tablesorter.com/docs/
+
+
+Turnier / Cup:
+	☐ Status:
+		Öffentlich (jeder kann mitmachen)
+		Invite-Only (nur eingeladene, aber öffentlich sichtbar)
+		Privat (nur eingeladene, nicht öffenltich sichtbar)
+	☐ Anmelde/Bestätigungsfrist:
+		Bei öffentlichen -> Nach Ablauf kein Beitritt mehr möglich
+		Bei invite/privat -> Nach Ablauf keine Bestätigung mehr möglich
+	☐ Modus
+		Je nach Anzahl der Mitspieler und gewählten Turnierform
+		Double Elemination
+		Single Elemination
+	☐ Startdatum - Enddatum
+		Ab wann es losgehen soll (nach Anmeldefrist)
+		Bis wann es gehen soll
+	☐ Twitch.tv anzeigen
+		Ob das Turnier live in einem bestimmten Channel gestreamed wird -> wird dann Embeded
+
+Liste:
+	☐ Status:
+		Öffentlich
+		Invite-Only
+		Privat
+	☐ Laufzeit:
+ 		Wie lange die Liste immer läuft halb/viertel/ganz-jährig
+	☐
