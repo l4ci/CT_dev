@@ -1,0 +1,41 @@
+.sidebar{
+	border-right: 1px solid #E5E5E5;
+	text-align: right;
+	margin-bottom: $base-line-height;
+
+	.title{
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-weight: bold;
+		padding: 0.5em 2em .75em 0;
+		margin-top: $base-line-height;
+
+		&:first-child{
+			margin-top:0;
+		}
+	}
+
+
+	ul{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		li{
+			a{
+				letter-spacing: 1px;
+				text-decoration: none;
+				padding:0.5em 2em 0.5em 1em;
+				display: block;
+				border:none;
+				color: $color-text-light;
+
+				&.active,
+				&:hover{
+					color: $color-text;
+					background: lighten($color-text-light,35%);
+				}
+			}
+		}
+	}
+}

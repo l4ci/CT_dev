@@ -5,22 +5,23 @@
 @import "defaults";
 
 /**
- * Load extensions
- */
-@import "ext/normalize"; 		// normalize.css
-@import "ext/grid";
-
-
-/**
  * Google Webfonts
  */
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic);
+@import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic');
 
 /**
  * Load all generic classes
  */
+@import "generic/normalize";
 @import "generic/mixins";
 @import "generic/helpers";
+
+/**
+ * Load extensions
+ */
+@import "ext/grid";
+@import "ext/tabs";
+@import "ext/sidebar";
 
 /**
  * Load all base classes
@@ -36,9 +37,3 @@
 @import "objects/nav";
 @import "objects/content";
 @import "objects/footer";
-
-
-/**
- * More Extensions
- */
-@import "ext/tabs";

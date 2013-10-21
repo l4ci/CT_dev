@@ -1,3 +1,7 @@
+$tab-border : 1px;
+$tab-padding : 40px;
+$tab-margin : 10px;
+
 ul.tabs{
 	margin: $base-line-height 0 0;
 	padding: 0 0;
@@ -11,17 +15,18 @@ ul.tabs{
 
 		a{
 			display: block;
-			color: $color-text-light;
-			padding: 3px 10px;
-			margin:0 10px -1px 0;
-			border: 1px solid $color-text-light;
-			border-bottom: 1px solid #ccc;
-			background: #E6E6E6;
+			color: lighten($color-primary,50%);
+			padding: 3px ($tab-padding / 2);
+			margin:0 $tab-margin 0 0;
+			margin-bottom: -$tab-border;
+			border: $tab-border solid lighten($color-primary,50%);
+			border-bottom: $tab-border solid #ccc;
+			background: $color-secondary;
 			cursor: pointer;
 			text-decoration: none;
 
 			&:hover{
-				border-color: $color-text-light;
+				border-color: lighten($color-primary,50%);
 				border-bottom: none;
 				background: #fff;
 				color: #333;
@@ -30,7 +35,7 @@ ul.tabs{
 			&.active{
 				background: #fff;
 				color: #333;
-				border-bottom: 1px solid #fff;
+				border-bottom: $tab-border solid #fff;
 			}
 		}
 	}

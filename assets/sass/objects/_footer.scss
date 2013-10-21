@@ -1,11 +1,15 @@
 footer{
+	@extend .clearfix;
 	background: #FBFBFA;
 	border-top: 1px solid #C4CBCC;
 
 	.footer {
-		@extend .clearfix;
 		margin: 0;
 		padding: 0;
+
+		&.right{
+			float: right;
+		}
 
 	  li {
 	    float: left;
@@ -17,6 +21,10 @@ footer{
 	    	color: #666;
 	    	display: block;
 	    	padding: 0 15px;
+
+	    	&:first-child{
+	    		padding-left: 0;
+	    	}
 
 	    	&:hover{
 	    		color: darken(#666,20%);
