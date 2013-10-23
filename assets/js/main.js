@@ -22,9 +22,5 @@ jQuery( document ).ready(function( $ ) {
 		e.preventDefault();
 		$(this).next('.dropdown-menu').slideToggle();
   });
-  $('.dropdown .dropdown-toggle-hover').hover(function(e){
-		e.preventDefault();
-		$(this).next('.dropdown-menu').slideToggle();
-  });
 
 });

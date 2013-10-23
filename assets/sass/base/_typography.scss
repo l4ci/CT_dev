@@ -58,6 +58,7 @@ h6,.h6{
 }
 .hero{
   @include font-size($size-hero);
+  margin: ($base-line-height * 3) 0 $base-line-height;
 }
 
 /**
