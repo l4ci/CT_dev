@@ -89,3 +89,12 @@ dl{
 		display: block;
 	}
 }
+
+pre,
+code{
+	display: inline-block;
+	font-family: $font-family-input;
+	margin: 0;
+	padding: 2px 5px;
+	background: $color-secondary;
+}

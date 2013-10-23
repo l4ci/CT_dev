@@ -17,4 +17,14 @@ jQuery( document ).ready(function( $ ) {
 		$(targetContainer).find("[data-id='" + getTabHref + "']").addClass('active');
   });
 
+  // Dropdown
+  $('.dropdown .dropdown-toggle').click(function(e){
+		e.preventDefault();
+		$(this).next('.dropdown-menu').slideToggle();
+  });
+  $('.dropdown .dropdown-toggle-hover').hover(function(e){
+		e.preventDefault();
+		$(this).next('.dropdown-menu').slideToggle();
+  });
+
 });

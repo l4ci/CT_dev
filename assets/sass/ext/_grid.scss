@@ -83,7 +83,7 @@ $breakpoint-l-max:  $breakpoint-xl-min - 1 !default;
   display: block;
   float: left;
   margin: 0 0;
-  padding: ($grid-gutter / 2);
+  padding: 0 ($grid-gutter / 2);
 }
 
 

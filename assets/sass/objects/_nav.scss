@@ -1,12 +1,13 @@
 header{
-	background: #40454F;
+	background: $header-background;
+	@extend .clearfix;
 
 	.logo{
 		display: block;
 		height: 40px;
 		width: 85px;
 		margin:12px 40px 0 0;
-		background: url('../img/logo_mockup.png') no-repeat;
+		background: url('../img/logo.png') no-repeat;
 		background-size:100%;
 		float: left;
 	}
@@ -23,22 +24,23 @@ nav{
 			float: right;
 		}
 
-	  li {
+	  & > li {
 	    float: left;
 	    list-style: none;
 	    @include font-size(15px);
-	    line-height: 60px;
+	    line-height: $header-height;
 
-	    a{
-	    	color: #fff;
+	    & > a{
+	    	color: $header-color;
 	    	display: block;
-	    	padding: 0 15px;
+	    	padding: 0 ($header-height / 4);
+	    	background: $header-background;
 
 				&.active{
-					background: lighten(#40454F,5%);
+					background: lighten($header-background,5%);
 				}
 	    	&:hover{
-	    		background: lighten(#40454F,5%);
+	    		background: lighten($header-background,5%);
 	    	}
 	    }
 	  }

@@ -1,0 +1,55 @@
+.dropdown{
+	display: block;
+	position: relative;
+
+	ul.dropdown-menu{
+		display: none;
+		background: $header-background;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		z-index: 1000;
+		min-width: ($header-height * 3);
+
+
+		li{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			display: block;
+			float: none;
+			position: relative;
+			line-height: ($header-height - 10px);
+
+			&.header{
+				@include font-size(14px);
+				background: lighten($header-background,10%);
+				padding: 0 ($header-height / 4);
+				color: $header-color;
+			}
+
+			&.divider{
+				display: block;
+				height: 1px;
+				background: lighten($header-background,20%);
+			}
+
+			a{
+				color: $header-color;
+	    	display: block;
+	    	padding: 0 15px;
+
+				&.active{
+					background: lighten($header-background,5%);
+				}
+	    	&:hover{
+	    		background: lighten($header-background,5%);
+	    	}
+
+			}
+		}
+	}
+}
