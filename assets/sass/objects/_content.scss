@@ -1,17 +1,21 @@
 .content{
-	margin-bottom:30px;
-	padding-bottom:30px;
+	padding:$base-line-height 0;
 
-	&.alt{
+	&.bg-primary{
+		color: lightdark($color-primary,80%);
+		background: $color-primary;
+
+	}
+	&.bg-secondary{
+		color: lightdark($color-secondary,80%);
 		background: $color-secondary;
 	}
-	a{
-		color: $color-link;
-		border-bottom:1px solid lighten($color-link,30%);
-
-		&:hover{
-			color: darken($color-link,20%);
-			border-color: lighten($color-link,20%);
-		}
+	&.bg-tertiary{
+		color: lightdark($color-tertiary,80%);
+		background: $color-tertiary;
+	}
+	&.bg-grey{
+		color: lightdark($color-grey,80%);
+		background: $color-grey;
 	}
 }

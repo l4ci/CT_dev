@@ -116,7 +116,15 @@ $breakpoint-l-max:  $breakpoint-xl-min - 1 !default;
 .show-on-xs{
   display: block;
 }
-
+.xs-align-left{
+	text-align: left;
+}
+.xs-align-right{
+	text-align: right;
+}
+.xs-align-center{
+	text-align: center;
+}
 /**
  * Small devices
  * (tablets, big smartphones)
@@ -131,6 +139,15 @@ $breakpoint-l-max:  $breakpoint-xl-min - 1 !default;
   .show-on-s{
     display: block;
   }
+  .s-align-left{
+		text-align: left;
+	}
+	.s-align-right{
+		text-align: right;
+	}
+	.s-align-center{
+		text-align: center;
+	}
 
   @for $i from 1 through $grid-columns {
     .s-col-#{$i} {
@@ -155,6 +172,15 @@ $breakpoint-l-max:  $breakpoint-xl-min - 1 !default;
   .show-on-m{
     display: block;
   }
+  .m-align-left{
+		text-align: left;
+	}
+	.m-align-right{
+		text-align: right;
+	}
+	.m-align-center{
+		text-align: center;
+	}
 
   @for $i from 1 through $grid-columns {
     .m-col-#{$i} {
@@ -164,7 +190,7 @@ $breakpoint-l-max:  $breakpoint-xl-min - 1 !default;
 }
 
 /**
- * Medium devices
+ * Large devices
  * (desktops, 992px and up)
  */
 @media (min-width: $breakpoint-l-min){
@@ -179,6 +205,15 @@ $breakpoint-l-max:  $breakpoint-xl-min - 1 !default;
   .show-on-l{
     display: block;
   }
+  .l-align-left{
+		text-align: left;
+	}
+	.l-align-right{
+		text-align: right;
+	}
+	.l-align-center{
+		text-align: center;
+	}
 
   @for $i from 1 through $grid-columns {
     .l-col-#{$i} {
@@ -188,7 +223,7 @@ $breakpoint-l-max:  $breakpoint-xl-min - 1 !default;
 }
 
 /**
- * Large devices
+ * Extra Large devices
  * (large desktops)
  */
 @media (min-width: $breakpoint-xl-min){
@@ -203,6 +238,15 @@ $breakpoint-l-max:  $breakpoint-xl-min - 1 !default;
   .show-on-xl{
     display: block;
   }
+  .xl-align-left{
+		text-align: left;
+	}
+	.xl-align-right{
+		text-align: right;
+	}
+	.xl-align-center{
+		text-align: center;
+	}
 
   @for $i from 1 through $grid-columns {
     .xl-col-#{$i} {

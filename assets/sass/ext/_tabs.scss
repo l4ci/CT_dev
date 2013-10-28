@@ -1,11 +1,10 @@
-$tab-border : 1px;
-$tab-padding : 40px;
-$tab-margin : 10px;
-
+/**
+ * Tabs
+ */
 ul.tabs{
 	margin: $base-line-height 0 0;
 	padding: 0 0;
-	border-bottom: 1px solid #CCC;
+	border-bottom: 1px solid $tab-border-color;
 	list-style:none;
 
 	li{
@@ -15,27 +14,30 @@ ul.tabs{
 
 		a{
 			display: block;
-			color: lighten($color-primary,50%);
+			color: $color-text;
 			padding: 3px ($tab-padding / 2);
 			margin:0 $tab-margin 0 0;
 			margin-bottom: -$tab-border;
-			border: $tab-border solid lighten($color-primary,50%);
-			border-bottom: $tab-border solid #ccc;
-			background: $color-secondary;
+			border: $tab-border solid $tab-border-color;
+			border-bottom: $tab-border solid $tab-border-color;
+			background: $tab-background-color;
 			cursor: pointer;
 			text-decoration: none;
 
 			&:hover{
-				border-color: lighten($color-primary,50%);
+				border-color: lightdark($tab-border-color,10%);
 				border-bottom: none;
-				background: #fff;
+				background: lightdark($tab-background-color,10%);
 				color: #333;
 			}
 
 			&.active{
-				background: #fff;
-				color: #333;
-				border-bottom: $tab-border solid #fff;
+				color: lightdark($tab-background-color,80%);
+				border-bottom: $tab-border solid $tab-background-color;
+
+				&:hover{
+					background:inherit;
+				}
 			}
 		}
 	}

@@ -37,10 +37,10 @@ nav{
 	    	background: $header-background;
 
 				&.active{
-					background: lighten($header-background,5%);
+					background: lightdark($header-background,10%);
 				}
 	    	&:hover{
-	    		background: lighten($header-background,5%);
+	    		background: lightdark($header-background,10%);
 	    	}
 	    }
 	  }

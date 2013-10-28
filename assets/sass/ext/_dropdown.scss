@@ -32,7 +32,7 @@
 
 			&.header{
 				@include font-size(14px);
-				background: lighten($header-background,10%);
+				background: lightdark($header-background,10%);
 				padding: 0 ($header-height / 4);
 				color: $header-color;
 			}
@@ -40,7 +40,7 @@
 			&.divider{
 				display: block;
 				height: 1px;
-				background: lighten($header-background,20%);
+				background: lightdark($header-background,20%);
 			}
 
 			a{
@@ -49,10 +49,10 @@
 	    	padding: 0 15px;
 
 				&.active{
-					background: lighten($header-background,5%);
+					background: lightdark($header-background,5%);
 				}
 	    	&:hover{
-	    		background: lighten($header-background,5%);
+	    		background: lightdark($header-background,5%);
 	    	}
 
 			}

@@ -1,15 +1,15 @@
 /**
  * Colors
  */
-$color-primary:          #333!default;
-$color-secondary:        #E9E9E7!default;
+$color-primary:          #D24126!default;
+$color-secondary:        #40454F!default;
+$color-tertiary:         invert($color-secondary)!default;
+$color-grey: 						 #F2F2F2!default;
 
 $color-text:             #666!default;
 $color-text-light:       #999!default;
 
 $color-input:            #666!default;
-$color-link:             #666!default;
-$color-ui:               #dedede!default;
 
 $color-error:            red!default;
 $color-success:          green!default;
@@ -38,12 +38,12 @@ $base-line-height:       24px!default;
 $size-hero:              96px!default;
 $size-lead:              32px!default;
 
-$size-h1:                36px!default;
-$size-h2:                30px!default;
-$size-h3:                24px!default;
-$size-h4:                20px!default;
-$size-h5:                16px!default;
-$size-h6:                14px!default;
+$size-h1:                46px!default;
+$size-h2:                40px!default;
+$size-h3:                36px!default;
+$size-h4:                30px!default;
+$size-h5:                20px!default;
+$size-h6:                16px!default;
 
 $size-milli:             12px!default;
 $size-micro:             10px!default;
@@ -57,6 +57,28 @@ $border-radius:          3px!default;
 /**
  * Header
  */
-$header-background: #40454F!default;
-$header-height: 60px!default;
-$header-color: #fff!default;
+$header-background: 		$color-secondary!default;
+$header-height: 				60px!default;
+$header-color: 					#fff!default;
+
+/**
+ * Footer
+ */
+$footer-background: 		$color-primary!default;
+$footer-border: 				1px solid #C4CBCC!default;
+$footer-color: 					#fff!default;
+
+/**
+ * Tabs
+ */
+$tab-border : 					1px!default;
+$tab-padding : 					40px!default;
+$tab-margin : 					10px!default;
+$tab-border-color : 		lighten($color-text,20%) !default;
+$tab-background-color : $color-grey!default;
+
+/**
+ * Sidebar
+ */
+$sidebar-background: 		$color-secondary!default;
+$sidebar-border: 				1px solid #E5E5E5!default;

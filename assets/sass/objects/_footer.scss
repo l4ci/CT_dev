@@ -1,24 +1,20 @@
 footer{
 	@extend .clearfix;
-	background: #FBFBFA;
-	border-top: 1px solid #C4CBCC;
+	background: $footer-background;
+	border-top: $footer-border;
 
 	.footer {
-		margin: 0;
+		margin: auto;
 		padding: 0;
 
-		&.right{
-			float: right;
-		}
-
 	  li {
-	    float: left;
+	    display: inline-block;
 	    list-style: none;
 	    @include font-size(14px);
 	    line-height: 60px;
 
 	    a{
-	    	color: #666;
+	    	color: $footer-color;
 	    	display: block;
 	    	padding: 0 15px;
 
@@ -27,7 +23,7 @@ footer{
 	    	}
 
 	    	&:hover{
-	    		color: darken(#666,20%);
+	    		color: lightdark($footer-color,30%);
 	    	}
 	    }
 	  }

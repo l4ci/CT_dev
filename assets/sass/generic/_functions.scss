@@ -1,0 +1,10 @@
+// Lightdark
+//
+// Lightens or darkens a color based on the lightness
+@function lightdark($color,$percent){
+	@if lightness($color) < 50% {
+		@return lighten($color,$percent);
+	} @else {
+		@return darken($color,$percent);
+	}
+}
