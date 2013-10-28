@@ -69,11 +69,6 @@ $breakpoint-l-max:  $breakpoint-xl-min - 1 !default;
     display: table;
     clear: both;
   }
-
-  & > .row{
-    overflow: hidden;
-    margin:0 0;
-  }
 }
 
 [class*='col-'] {
@@ -84,6 +79,21 @@ $breakpoint-l-max:  $breakpoint-xl-min - 1 !default;
   float: left;
   margin: 0 0;
   padding: 0 ($grid-gutter / 2);
+
+	/* Col in a Col removes padding */
+  & [class*='col-']:first-child{
+		padding-left: 0;
+  }
+  & [class*='col-']:last-child{
+		padding-right: 0;
+  }
+}
+
+/* Create a row without padding */
+.row-nopad{
+	[class*='col-'] {
+		padding: 0 0;
+	}
 }
 
 
