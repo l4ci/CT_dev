@@ -3,17 +3,29 @@
  */
 $color-primary:          #D24126!default;
 $color-secondary:        #40454F!default;
-$color-tertiary:         invert($color-secondary)!default;
+$color-tertiary:         #e6db56!default;
 $color-grey: 						 #F2F2F2!default;
 
 $color-text:             #666!default;
 $color-text-light:       #999!default;
-
-$color-input:            #666!default;
-
-$color-error:            red!default;
-$color-success:          green!default;
 $color-background:       #fff!default;
+
+/**
+ * Forms
+ */
+$form-color:            #666!default;
+$form-padding: 					0.5rem!default;
+$form-border: 					1px solid $color-grey!default;
+$form-outline: 					#66CDE9!default;
+
+/**
+ * Buttons
+ */
+$button-color: 					#fff!default;
+$button-background: 		$color-secondary!default;
+$button-primary: 				$color-primary!default;
+$button-secondary: 			$color-secondary!default;
+$button-tertiary: 			$color-tertiary!default;
 
 /**
  * Custom Selection
@@ -26,8 +38,7 @@ $color-selection-text:       #fff!default;
  */
 $font-family-primary:    'Source Sans Pro', "Helvetica Neue", Arial, sans-serif!default;
 $font-family-secondary:  'Source Sans Pro', "Helvetica Neue", Arial, sans-serif!default;
-$font-family-tertiary:   'Source Sans Pro', "Helvetica Neue", Arial, sans-serif!default;
-$font-family-input:      "Menlo", monospace;
+$font-family-input:      'Source Sans Pro', "Helvetica Neue", Arial, sans-serif!default;
 
 /**
  * Font sizes
@@ -48,11 +59,6 @@ $size-h6:                16px!default;
 $size-milli:             12px!default;
 $size-micro:             10px!default;
 
-/**
- * Misc
- */
-$border-radius:          3px!default;
-
 
 /**
  * Header
@@ -64,8 +70,8 @@ $header-color: 					#fff!default;
 /**
  * Footer
  */
-$footer-background: 		$color-primary!default;
-$footer-border: 				1px solid #C4CBCC!default;
+$footer-background: 		$color-secondary!default;
+$footer-border: 				none!default;
 $footer-color: 					#fff!default;
 
 /**

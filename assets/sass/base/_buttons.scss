@@ -2,17 +2,84 @@
  * Base button styles.
  */
 .button {
-  display:inline-block;
-  vertical-align:middle;
-  white-space:nowrap;
-  font-family:inherit;
-  font-size:100%;
-  cursor:pointer;
-  border:none;
-  margin:0;
-  padding-top:   0;
-  padding-bottom:0;
-  line-height:3;
-  padding-right:1em;
-  padding-left: 1em;
+	font-family: $font-family-primary;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-weight: normal;
+  font-size: 100%;
+  cursor: pointer;
+  border: none;
+  margin: 0 ($base-line-height / 2) $base-line-height 0;
+  padding: 0 1rem;
+  line-height: 2.5;
+	outline: none;
+
+	color: $button-color;
+  background: $button-background;
+
+	&:active,
+	&:hover,
+	&:focus{
+		border: none;
+		outline: none;
+		background: lightdark($button-background,10%);
+	}
+
+
+	&.disabled,
+	[attr="disabled"]{
+		color: #666;
+		background: #ccc;
+		cursor: no-drop;
+
+		&:active,
+		&:hover,
+		&:focus{
+			cursor: no-drop;
+			background: #ccc;
+		}
+	}
+
+	&.primary{
+		background: $button-primary;
+
+		&:active,
+		&:hover,
+		&:focus{
+			border: none;
+			outline: none;
+			background: lightdark($button-primary,10%);
+		}
+	}
+	&.secondary{
+		background: $button-secondary;
+
+		&:active,
+		&:hover,
+		&:focus{
+			border: none;
+			outline: none;
+			background: lightdark($button-secondary,10%);
+		}
+	}
+	&.tertiary{
+		background: $button-tertiary;
+
+		&:active,
+		&:hover,
+		&:focus{
+			border: none;
+			outline: none;
+			background: lightdark($button-tertiary,10%);
+		}
+	}
+
+
+}
+
+.button-group{
+	.button{
+		margin:0 0 $base-line-height 0;
+	}
 }

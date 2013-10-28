@@ -1,8 +1,37 @@
 fieldset {
-  border: 0;
+	margin-bottom: $base-line-height;
+	border: none;
+
+	legend{
+		color: darken($color-grey,30%);
+	}
 }
-input, textarea, select {
+input, textarea, select, button {
+	// -webkit-appearance: none;
+	border-radius: 0;
   font-family: $font-family-input;
-  color: $color-input;
+  color: $form-color;
   @include font-size($base-font-size);
+
+  padding: $form-padding;
+  margin-bottom:$base-line-height;
+  border: $form-border;
+
+	&:active,
+	&:hover{
+  	outline: none;
+  	border: $form-border;
+  	border-color: darken($color-grey,20%);
+  }
+
+  &:focus{
+		outline: 2px solid $form-outline;
+  }
+
+}
+
+input[type=submit],
+input[type=reset],
+button{
+	@extend .button;
 }

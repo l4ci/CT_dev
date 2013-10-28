@@ -16,7 +16,12 @@ header{
 nav{
 	@extend .clearfix;
 
+	#togglemenu{
+		display: none;
+	}
+
 	.nav {
+		display: block;
 		margin: 0;
 		padding: 0;
 
@@ -40,9 +45,49 @@ nav{
 					background: lightdark($header-background,10%);
 				}
 	    	&:hover{
-	    		background: lightdark($header-background,10%);
+	    		background: lightdark($header-background,5%);
 	    	}
 	    }
 	  }
 	}
+
+	@media (max-width: $breakpoint-s-max){
+
+			#togglemenu{
+				display: block;
+				text-align: right;
+				line-height: $header-height;
+				padding: 0 ($header-height / 4);
+			}
+
+		  .nav{
+		  	display: none;
+
+		  	&.open{
+		  		display: block;
+		  	}
+
+		  	&.right{
+					float: none;
+				}
+
+				& > li {
+		    float: none;
+
+			    & > a{
+			    	color: $header-color;
+			    	display: block;
+			    	padding: 0 ($header-height / 4);
+			    	background: $header-background;
+
+						&.active{
+							background: lightdark($header-background,10%);
+						}
+			    	&:hover{
+			    		background: lightdark($header-background,5%);
+			    	}
+			    }
+			  }
+		  }
+		}
 }

@@ -1,6 +1,13 @@
 jQuery( document ).ready(function( $ ) {
   // Code using $ as usual goes here.
 
+  // NAVIGATION TOGGLE
+  $('#togglemenu').click(function(e){
+		e.preventDefault();
+		var getContainer		= $('.nav');
+		getContainer.toggleClass('open');
+  });
+
   // TABS
   $('.tabs li a').click(function(e){
 		e.preventDefault();
@@ -20,7 +27,7 @@ jQuery( document ).ready(function( $ ) {
   // Dropdown
   $('.dropdown .dropdown-toggle').click(function(e){
 		e.preventDefault();
-		$(this).next('.dropdown-menu').slideToggle();
+		$(this).next('.dropdown-menu').slideToggle().toggleClass('open');
   });
 
 });

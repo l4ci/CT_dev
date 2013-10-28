@@ -20,7 +20,7 @@ $breakpoint-xs-min:    0px  !default;
 $breakpoint-s-min:   500px  !default;
 $breakpoint-m-min:   750px  !default;
 $breakpoint-l-min:  1000px  !default;
-$breakpoint-xl-min: 1500px  !default;
+$breakpoint-xl-min: 1250px  !default;
 
 // Calculate max width
 $breakpoint-xs-max: $breakpoint-s-min  - 1 !default;
@@ -191,7 +191,6 @@ $breakpoint-l-max:  $breakpoint-xl-min - 1 !default;
 
 /**
  * Large devices
- * (desktops, 992px and up)
  */
 @media (min-width: $breakpoint-l-min){
 
@@ -229,7 +228,7 @@ $breakpoint-l-max:  $breakpoint-xl-min - 1 !default;
 @media (min-width: $breakpoint-xl-min){
 
   .container{
-    max-width: 1400px;
+    max-width: 1160px;
   }
 
   .hide-on-xl{
