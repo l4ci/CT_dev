@@ -1,12 +1,34 @@
 jQuery( document ).ready(function( $ ) {
-  // Code using $ as usual goes here.
+
+  // Animate scrolling
+	$(".scroll").click(function(e){
+		e.preventDefault();
+		$('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+	});
+
 
   // NAVIGATION TOGGLE
   $('#togglemenu').click(function(e){
 		e.preventDefault();
 		var getContainer		= $('.nav');
-		getContainer.toggleClass('open');
+
+		// Toggle Class and Animate
+		getContainer.slideToggle('slow', function(){
+				if ($(this).is(":visible") === false){
+					$(this).removeClass('open').addClass('closed').removeAttr('style');
+				} else {
+					$(this).removeClass('closed').addClass('open').removeAttr('style');
+				}
+			});
+
+		// Change Menu Icon
+		if (getContainer.is(":visible") === false) {
+			$(this).find('i').toggleClass('fa-reorder fa-times').prop('title', 'Show menu');
+		} else {
+			$(this).find('i').toggleClass('fa-reorder fa-times').prop('title', 'Hide menu');
+		}
   });
+
 
   // TABS
   $('.tabs li a').click(function(e){
@@ -24,10 +46,24 @@ jQuery( document ).ready(function( $ ) {
 		$(targetContainer).find("[data-id='" + getTabHref + "']").addClass('active');
   });
 
+
   // Dropdown
   $('.dropdown .dropdown-toggle').click(function(e){
 		e.preventDefault();
-		$(this).next('.dropdown-menu').slideToggle().toggleClass('open');
+		// Toggle Class and Animate
+		$(this).next('.dropdown-menu').slideToggle('slow', function(){
+				if ($(this).is(":visible") === false){
+					$(this).removeClass('open').addClass('closed').removeAttr('style');
+				} else {
+					$(this).removeClass('closed').addClass('open').removeAttr('style');
+				}
+			});
   });
+
+
+  // Global Resize Function
+	$(window).resize(function() {
+
+	});
 
 });

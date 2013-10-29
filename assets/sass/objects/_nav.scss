@@ -54,6 +54,7 @@ nav{
 	@media (max-width: $breakpoint-s-max){
 
 			#togglemenu{
+				color: lightdark($header-background,90%);
 				display: block;
 				text-align: right;
 				line-height: $header-height;
@@ -63,6 +64,9 @@ nav{
 		  .nav{
 		  	display: none;
 
+		  	&.closed{
+		  		display: none;
+		  	}
 		  	&.open{
 		  		display: block;
 		  	}

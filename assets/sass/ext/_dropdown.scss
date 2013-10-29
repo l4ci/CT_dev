@@ -20,9 +20,13 @@
 		z-index: 1000;
 		min-width: ($header-height * 3);
 
-		&.open{
-			background: lightdark($header-background,3%);
-		}
+		&.closed{
+  		display: none;
+  	}
+  	&.open{
+  		display: block;
+  		background: lightdark($header-background,3%);
+  	}
 
 
 		li{

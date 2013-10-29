@@ -12,14 +12,17 @@
 /**
  * Load all generic classes
  */
-@import "generic/normalize";
+@import "generic/normalize"; // Normalize.css
 @import "generic/functions";
 @import "generic/mixins";
 @import "generic/helpers";
 
+
 /**
  * Load extensions
  */
+@import "ext/font-awesome.min"; // Font-Awesome
+
 @import "ext/grid";
 @import "ext/tabs";
 @import "ext/dropdown";

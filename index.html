@@ -8,7 +8,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>CT SCSS</title>
 	<link rel="stylesheet" href="assets/css/main.css">
 	 <!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -17,7 +17,7 @@
 	<script src="js/ie8fix.js"></script>
 	<![endif]-->
 </head>
-<body>
+<body id="top">
 
 	<header>
 		<div class="container">
@@ -25,12 +25,12 @@
 				<div class="logo text-hide" title="CT SCSS">CT SCSS</div>
 
 				<nav>
-					<a href="#" title="Toggle Menu" id="togglemenu">Menü</a>
+					<a href="#" id="togglemenu"><i class="fa fa-reorder fa-lg" title="Show menu"></i></a>
 
 					<ul class="nav">
 						<li><a href="" class="active" title="Go home">Home</a></li>
 						<li class="dropdown">
-							<a href="#1" title="Show all lists" class="dropdown-toggle">Dropdown</a>
+							<a href="#1" title="Show all lists" class="dropdown-toggle">Dropdown <i class="fa fa-angle-down"></i></a>
 							<ul class="dropdown-menu">
 								<li><a href="">First Item</a></li>
 								<li><a href="">First Item</a></li>
@@ -249,7 +249,7 @@
 			<div class="xs-col-12 s-col-6">
 				<ul class="footer xs-align-center s-align-right">
 					<li><a href="">Impressum</a></li>
-					<li><a href="#">Top</a></li>
+					<li><a href="#top" class="scroll">Top</a></li>
 				</ul>
 			</div>
 			</div>
