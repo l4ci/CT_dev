@@ -62,7 +62,7 @@
 					<p class="lead">Whatever this means... this is a leading paragraph.</p>
 					<p>Lorem ipsum dolor <a href="">sit amet</a>, consectetur adipisicing elit. Laborum, ratione. Lorem ipsum dolor sit amet,onsectetur adipisicing elit. Modi maiores dicta exercitationem error enim quia deleniti debitis officia! Ut, iure quibusdam! Sunt, error tempore porro sed at ipsam nostrum omnis eligendi ex quis! Error, sit fugit ipsa ex fugiat accusantium odit accusamus maxime. Eligendi, velit atque soluta! Velit, maxime, laudantium, consectetur, facere nisi nulla voluptates voluptatibus obcaecati perferendis vitae tenetur culpa eum quaerat accusantium ducimus.</p>
 
-					<p><button class="large">Large Call to action</button></p>
+					<p><button class="large transparent">Large Call to action</button></p>
 				</div>
 			</div><!-- .row -->
 		</div><!-- .container-->
@@ -245,8 +245,40 @@
 
 						<h5>Buttons can be block</h5>
 						<button class="block">Block Button</button>
+
+						<h5>Buttons can be transparent</h5>
+						<div style="background-color:#ccc;padding:20px;">
+							<button class="large transparent">Light / Default</button>
+							<button class="large transparent dark">Dark</button>
+						</div>
 					</form>
 				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="content bg-grey">
+		<div class="container">
+			<div class="row">
+				<h3>Accordion</h3>
+
+				<dl class="accordion">
+					<dt><a href="">Panel 1</a></dt>
+					<dd class="active">Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</dd>
+
+					<dt><a href="">Panel 2</a></dt>
+					<dd>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</dd>
+
+					<dt><a href="">Panel 3</a></dt>
+					<dd>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</dd>
+				</dl>
+
+
+				<h4>Popups</h4>
+				<a href="#" class="popup">Popup <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, minus.</span></a>
+
+				<h4>Tooltip</h4>
+				<p>Anything can have a <span class="tooltip" data-tooltip="Quick tip: Nice Tooltip">tooltip</span> and even a <span class="tooltip top" data-tooltip="Quick tip: Nice Tooltip">top tooltip</span> and even a <span class="tooltip left" data-tooltip="Quick tip: Nice Tooltip">left tooltip</span> and even a <span class="tooltip right" data-tooltip="Quick tip: Nice Tooltip">right tooltip.</span></p>
 			</div>
 		</div>
 	</section>

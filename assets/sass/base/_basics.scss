@@ -50,10 +50,10 @@ img {
 }
 
 ::-moz-selection {
-  background: $color-selection-background;
-  color: $color-selection-text;
+  background: $selection-background;
+  color: $selection-text;
 }
 ::selection {
-  background: $color-selection-background;
-  color: $color-selection-text;
+  background: $selection-background;
+  color: $selection-text;
 }

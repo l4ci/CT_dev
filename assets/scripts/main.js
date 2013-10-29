@@ -61,6 +61,22 @@ jQuery( document ).ready(function( $ ) {
   });
 
 
+	// Accordion
+	$('.accordion > dt').click(function(e) {
+		e.preventDefault();
+
+		var allPanels = $(this).parents('.accordion').find('dd');
+		var target = $(this).next();
+
+		if(!target.hasClass('active')){
+			allPanels.slideUp('slow', function(){
+				$(this).removeClass('active');
+			});
+			target.slideDown().addClass('active');
+		}
+	});
+
+
   // Global Resize Function
 	$(window).resize(function() {
 

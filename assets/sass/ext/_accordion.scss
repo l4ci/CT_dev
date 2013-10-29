@@ -1,0 +1,19 @@
+.accordion {
+	margin: 0;
+	padding: 0;
+	margin: 0 0 ($base-line-height / 2) 0;
+
+	dt{
+		display: block;
+		line-height: 2;
+		border: 1px solid $color-grey;
+	}
+	dd {
+		display: none;
+		padding: 0;
+
+		&.active {
+			display: block;
+		}
+	}
+}

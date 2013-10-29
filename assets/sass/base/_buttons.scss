@@ -121,6 +121,32 @@
 		}
 	}
 
+	&.transparent{
+		color: #fff;
+		background: transparent;
+		border-color: #fff;
+
+		&:active,
+		&:hover,
+		&:focus{
+			border-color: #fff;
+			background: rgba(#fff,0.1);
+		}
+
+		&.dark{
+			color: #000;
+			background: transparent;
+			border-color: #000;
+
+			&:active,
+			&:hover,
+			&:focus{
+				border-color: #000;
+				background: rgba(#000,0.1);
+			}
+		}
+	}
+
 
 }
 

@@ -1,78 +1,82 @@
 /**
  * Colors
  */
-$color-primary:          #D24126!default;
-$color-secondary:        #40454F!default;
-$color-tertiary:         lighten($color-primary,30%)!default;
-$color-grey: 						 #F2F2F2!default;
+$color-primary:          	#D24126!default;
+$color-secondary:        	#40454F!default;
+$color-tertiary:         	lighten($color-primary,30%)!default;
+$color-grey: 						 	#F2F2F2!default;
 
-$color-text:             #666!default;
-$color-text-light:       #999!default;
-$color-background:       #fff!default;
+$color-text:             	#666!default;
+$color-text-light:       	#999!default;
+$color-background:      	#fff!default;
+
+$color-success: 					#71cf6a!default;
+$color-danger: 						#cf353c!default;
+$color-info: 							#6eb5cf!default;
 
 /**
  * Forms
  */
-$form-color:            #666!default;
-$form-padding: 					0.5rem!default;
-$form-border: 					1px solid $color-grey!default;
-$form-border-radius:  	3px!default;
-$form-outline: 					none!default;
+$form-color:            	#666!default;
+$form-padding: 						0.5rem!default;
+$form-border: 						1px solid $color-grey!default;
+$form-border-radius:  		3px!default;
+$form-outline: 						none!default;
 
 /**
  * Buttons
  */
-$button-color: 					#333!default;
-$button-border: 				1px solid !default;
-$button-border-color: 	#ccc!default;
-$button-border-radius:  3px!default;
+$button-color: 						#333!default;
+$button-border: 					1px solid !default;
+$button-border-color: 		#ccc!default;
+$button-border-radius:  	3px!default;
 
-$button-background: 		#fff!default;
+$button-background: 			#fff!default;
 
-$button-primary: 				$color-primary!default;
-$button-success: 				green!default;
-$button-danger: 				red!default;
-$button-info: 					orange!default;
+$button-primary: 					$color-primary!default;
+$button-success: 					$color-success!default;
+$button-danger: 					$color-danger!default;
+$button-info: 						$color-info!default;
 
 /**
  * Custom Selection
  */
-$color-selection-background: #333!default;
-$color-selection-text:       #fff!default;
+$selection-background: 		#333!default;
+$selection-text:       		#fff!default;
 
 /**
  * Font families
  */
-$font-family-primary:    'Source Sans Pro', "Helvetica Neue", Arial, sans-serif!default;
-$font-family-secondary:  'Source Sans Pro', "Helvetica Neue", Arial, sans-serif!default;
-$font-family-input:      'Source Sans Pro', "Helvetica Neue", Arial, sans-serif!default;
+$font-family-primary:    	'Source Sans Pro', "Helvetica Neue", Arial, sans-serif!default;
+$font-family-secondary:  	'Source Sans Pro', "Helvetica Neue", Arial, sans-serif!default;
+$font-family-input:      	'Source Sans Pro', "Helvetica Neue", Arial, sans-serif!default;
 
 /**
  * Font sizes
  */
-$base-font-size:         16px!default;
-$base-line-height:       24px!default;
+$base-font-size:         	16px!default;
+$base-line-height:       	24px!default;
 
-$size-hero:              96px!default;
-$size-lead:              32px!default;
+$size-hero:              	96px!default;
+$size-lead:              	32px!default;
 
-$size-h1:                46px!default;
-$size-h2:                40px!default;
-$size-h3:                36px!default;
-$size-h4:                30px!default;
-$size-h5:                20px!default;
-$size-h6:                16px!default;
+$size-h1:                	46px!default;
+$size-h2:                	40px!default;
+$size-h3:                	36px!default;
+$size-h4:                	30px!default;
+$size-h5:                	20px!default;
+$size-h6:                	16px!default;
 
-$size-milli:             12px!default;
-$size-micro:             10px!default;
+$size-milli:             	12px!default;
+$size-micro:             	10px!default;
 
 
 /**
  * Header
  */
-$header-background: 		$color-secondary!default;
-$header-height: 				60px!default;
-$header-color: 					#fff!default;
+$header-background: 			$color-secondary!default;
+$header-height: 					60px!default;
+$header-color: 						#fff!default;
 
 /**
  * Footer
@@ -95,3 +99,12 @@ $tab-background-color : $color-grey!default;
  */
 $sidebar-background: 		$color-secondary!default;
 $sidebar-border: 				1px solid #E5E5E5!default;
+
+/**
+ * Tooltip
+ */
+$tooltip-size: 							  14px!default;
+$tooltip-color: 							#fff!default;
+$tooltip-background-color:  	darken($color-grey,70%)!default;
+$tooltip-border:   						none!default;
+$tooltip-border-radius:   		3px!default;
