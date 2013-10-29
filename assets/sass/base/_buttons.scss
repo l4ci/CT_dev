@@ -2,18 +2,28 @@
  * Base button styles.
  */
 .button {
+	-webkit-font-smoothing: inherit;
 	font-family: $font-family-primary;
+	font-weight: normal;
+  font-size: 100%;
+
   display: inline-block;
   vertical-align: middle;
   white-space: nowrap;
-  font-weight: normal;
-  font-size: 100%;
-  cursor: pointer;
-  border: none;
   margin: 0 ($base-line-height / 2) $base-line-height 0;
   padding: 0 1rem;
   line-height: 2.5;
-	outline: none;
+
+  cursor: pointer;
+  outline: none;
+  border: $button-border;
+  border-color: $button-border-color;
+  border-radius: $button-border-radius;
+
+	text-align: center;
+	text-decoration: none;
+	text-shadow: none;
+	text-transform: uppercase;
 
 	color: $button-color;
   background: $button-background;
@@ -21,12 +31,35 @@
 	&:active,
 	&:hover,
 	&:focus{
-		border: none;
 		outline: none;
-		background: lightdark($button-background,10%);
+		border-color: lightdark($button-border-color,10%);
+		background: lightdark($button-background,5%);
 	}
 
+	// Block Button
+	&.block{
+		display: block;
+		width: 100%;
+	}
 
+	// Sizes
+	&.extrasmall{
+		@include font-size(13px,false);
+		padding: 0 0.4rem;
+  	line-height: 1.5;
+	}
+	&.small{
+		@include font-size(14px,false);
+		padding: 0 0.5rem;
+  	line-height: 2;
+	}
+	&.large{
+		@include font-size(20px,false);
+		padding: 0 2rem;
+  	line-height: 2.8;
+	}
+
+	// Disabled Button
 	&.disabled,
 	[attr="disabled"]{
 		color: #666;
@@ -41,45 +74,68 @@
 		}
 	}
 
+
+	// Color Variations
 	&.primary{
 		background: $button-primary;
+		border-color: $button-primary;
 
 		&:active,
 		&:hover,
 		&:focus{
-			border: none;
-			outline: none;
-			background: lightdark($button-primary,10%);
+			border-color: lightdark($button-primary,10%);
+			background: lightdark($button-primary,5%);
 		}
 	}
-	&.secondary{
-		background: $button-secondary;
+	&.success{
+		background: $button-success;
+		border-color: $button-success;
 
 		&:active,
 		&:hover,
 		&:focus{
-			border: none;
-			outline: none;
-			background: lightdark($button-secondary,10%);
+			border-color: lightdark($button-success,10%);
+			background: lightdark($button-success,5%);
 		}
 	}
-	&.tertiary{
-		background: $button-tertiary;
+	&.danger{
+		background: $button-danger;
+		border-color: $button-danger;
 
 		&:active,
 		&:hover,
 		&:focus{
-			border: none;
-			outline: none;
-			background: lightdark($button-tertiary,10%);
+			border-color: lightdark($button-danger,10%);
+			background: lightdark($button-danger,5%);
+		}
+	}
+	&.info{
+		background: $button-info;
+		border-color: $button-info;
+
+		&:active,
+		&:hover,
+		&:focus{
+			border-color: lightdark($button-info,10%);
+			background: lightdark($button-info,5%);
 		}
 	}
 
 
 }
 
+// Button Groups
 .button-group{
 	.button{
+		border-radius: 0;
 		margin:0 0 $base-line-height 0;
+	}
+	.button:first-child{
+		border-top-left-radius: 3px;
+		border-bottom-left-radius: 3px;
+	}
+	.button:last-child{
+		border-top-right-radius: 3px;
+		border-bottom-right-radius: 3px;
 	}
 }

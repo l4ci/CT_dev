@@ -3,7 +3,7 @@
  */
 $color-primary:          #D24126!default;
 $color-secondary:        #40454F!default;
-$color-tertiary:         #1FA67A!default;
+$color-tertiary:         lighten($color-primary,30%)!default;
 $color-grey: 						 #F2F2F2!default;
 
 $color-text:             #666!default;
@@ -16,16 +16,23 @@ $color-background:       #fff!default;
 $form-color:            #666!default;
 $form-padding: 					0.5rem!default;
 $form-border: 					1px solid $color-grey!default;
-$form-outline: 					#66CDE9!default;
+$form-border-radius:  	3px!default;
+$form-outline: 					none!default;
 
 /**
  * Buttons
  */
-$button-color: 					#fff!default;
-$button-background: 		$color-secondary!default;
+$button-color: 					#333!default;
+$button-border: 				1px solid !default;
+$button-border-color: 	#ccc!default;
+$button-border-radius:  3px!default;
+
+$button-background: 		#fff!default;
+
 $button-primary: 				$color-primary!default;
-$button-secondary: 			$color-secondary!default;
-$button-tertiary: 			$color-tertiary!default;
+$button-success: 				green!default;
+$button-danger: 				red!default;
+$button-info: 					orange!default;
 
 /**
  * Custom Selection
