@@ -69,10 +69,15 @@ jQuery( document ).ready(function( $ ) {
 		var target = $(this).next();
 
 		if(!target.hasClass('active')){
-			allPanels.slideUp('slow', function(){
-				$(this).removeClass('active');
+			// allPanels.slideUp('slow', function(){
+			// 	$(this).removeClass('active');
+			// });
+			allPanels.slideUp(300,function(){
+				$(this).removeClass('active').removeAttr('style');
 			});
-			target.slideDown().addClass('active');
+			target.slideDown(300,function(){
+				$(this).addClass('active').removeAttr('style')
+			});
 		}
 	});
 
