@@ -1,0 +1,62 @@
+table.table{
+	width: 100%;
+	max-width: 100%;
+
+	thead{
+		th{
+			text-align: left;
+			vertical-align: bottom;
+			border-bottom: 2px solid #DDD;
+			padding: 0.5rem;
+		}
+	}
+	tbody{
+		td{
+			padding: 0.5rem;
+			vertical-align: top;
+			border-top: 1px solid #DDD;
+		}
+	}
+
+	// Table with stripes
+	&.striped{
+		tr:nth-child(odd) > td{
+			background-color: #F9F9F9;
+		}
+	}
+
+	// Table with border
+	&.bordered{
+		border: 1px solid #DDD;
+
+		th,
+		td{
+			border: 1px solid #DDD;
+		}
+		th{
+			border-bottom: 2px solid #DDD;
+		}
+	}
+
+	// Table with hover
+	&.hover{
+		tr:hover > td{
+			background-color: #F5F5F5;
+		}
+	}
+}
+
+// Scrollable table
+.table-scrollable{
+	width: 100%;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	border: 1px solid #DDD;
+
+	table{
+		th,
+		td{
+			white-space: nowrap;
+		}
+	}
+}

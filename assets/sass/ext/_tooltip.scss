@@ -5,26 +5,29 @@
   // Data
   &:before,
   &.bottom:before {
+  	z-index: 200;
     position: absolute;
     left: 0;
     top: calc(100% + 7px);
     background-color: $tooltip-background-color;
     color: $tooltip-color;
-    height: ($tooltip-size * 2);
     @include font-size($tooltip-size,false);
     border: $tooltip-border;
     border-radius: $tooltip-border-radius;
     padding: 0.2rem 0.4rem;
     content: attr(data-tooltip);
     white-space: nowrap;
+    height: ($tooltip-size * 2);
+    overflow: hidden;
     display: none;
   }
 
   // Arrow
   &:after,
   &.bottom:after {
+  	z-index: 199;
     position: absolute;
-    left: 10px;
+    left: 4px;
     top: calc(100% - 7px);
     border: 7px solid transparent;
     border-bottom: 7px solid $tooltip-background-color;
@@ -79,6 +82,7 @@
     }
   }
 
+	// Hover effect
   &:hover:after,
   &:hover:before{
     display: block;

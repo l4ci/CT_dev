@@ -68,7 +68,7 @@
 		</div><!-- .container-->
 	</section>
 
-	<section class="content">
+	<section class="content" id="basics">
 		<div class="container">
 
 			<div class="row">
@@ -113,7 +113,7 @@
 </div><!-- .container -->
 </section>
 
-<section class="content bg-secondary">
+<section class="content bg-secondary" id="sidebar">
 		<div class="container">
 			<div class="row">
 				<div class="col-3">
@@ -143,36 +143,188 @@
 		</div><!-- .container -->
 </section>
 
-<section class="content bg-grey">
+<section class="content bg-grey" id="tables">
 		<div class="container">
-
 			<div class="row">
-				<div class="col-12">
 
-					<ul class="tabs" data-tab="1">
-						<li><a href="#tab1">Tab</a></li>
-						<li><a href="#tab2" class="active">Tab</a></li>
-						<li><a href="#tab3">Tab</a></li>
-					</ul>
-					<ul class="tabs_content" data-tab="1">
-						<li data-id="#tab1">
-							<div class="row">
-								<div class="col-6"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, atque quod recusandae adipisci provident minus vitae maiores <a href="#">Link in a tab</a> aperiam nihil sit! Ipsa, repudiandae dolore sit laudantium necessitatibus tempora accusamus veniam cum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, illum!</p></div>
-								<div class="col-6"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, quod, reiciendis quas eius magnam natus iure a doloremque corrupti illum. Natus, quas, dolor, quo, praesentium excepturi voluptates eum officiis aperiam laboriosam labore sint ut quis voluptatibus recusandae in. Ratione, nesciunt!</p></div>
-							</div>
-						</li>
-						<li data-id="#tab2" class="active">
-							<p>Tabs for toggling multiple content on the same page. Can contain anything. <code><small>class="active"</small></code> is displayed first.</p>
-						</li>
-						<li data-id="#tab3">
-							<p>Tab 3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, maiores.</p>
-						</li>
-					</ul>
-				</div>
-			</div>
-</div><!-- .container -->
+				<div class="col-12">
+					<h3>Tables</h3>
+				</div><!-- .col-12 -->
+
+				<div class="col-12 l-col-6">
+					<p><pre>class="table hover"</pre></p>
+					<table class="table hover">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>First</th>
+								<th>Last</th>
+								<th>Something</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>lorem</td>
+								<td>ipsum</td>
+								<td>dolorem</td>
+								<td>sit amat</td>
+							</tr>
+							<tr>
+								<td>lorem</td>
+								<td>ipsum</td>
+								<td>dolorem</td>
+								<td>sit amat</td>
+							</tr>
+							<tr>
+								<td>lorem</td>
+								<td>ipsum</td>
+								<td>dolorem</td>
+								<td>sit amat</td>
+							</tr>
+						</tbody>
+					</table>
+				</div><!-- .col-12 l-col-6 -->
+
+				<div class="col-12 l-col-6">
+					<p><pre>class="table striped"</pre></p>
+					<table class="table striped">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>First</th>
+								<th>Last</th>
+								<th>Something</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>lorem</td>
+								<td>ipsum</td>
+								<td>dolorem</td>
+								<td>sit amat</td>
+							</tr>
+							<tr>
+								<td>lorem</td>
+								<td>ipsum</td>
+								<td>dolorem</td>
+								<td>sit amat</td>
+							</tr>
+							<tr>
+								<td>lorem</td>
+								<td>ipsum</td>
+								<td>dolorem</td>
+								<td>sit amat</td>
+							</tr>
+						</tbody>
+					</table>
+				</div><!-- .col-12 l-col-6 -->
+
+				<div class="col-12 l-col-6">
+					<p><pre>class="table bordered"</pre></p>
+					<table class="table bordered">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>First</th>
+								<th>Last</th>
+								<th>Something</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>lorem</td>
+								<td>ipsum</td>
+								<td>dolorem</td>
+								<td>sit amat</td>
+							</tr>
+							<tr>
+								<td>lorem</td>
+								<td>ipsum</td>
+								<td>dolorem</td>
+								<td>sit amat</td>
+							</tr>
+							<tr>
+								<td>lorem</td>
+								<td>lorem</td>
+								<td>ipsum</td>
+								<td>dolorem</td>
+							</tr>
+						</tbody>
+					</table>
+				</div><!-- .col-12 l-col-6 -->
+
+				<div class="col-12 l-col-6">
+					<p><pre>.table</pre> wrapped in a <pre>.table-scrollable</pre> div</p>
+					<div class="table-scrollable">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>First</th>
+									<th>Last</th>
+									<th>Something</th>
+									<th>001</th>
+									<th>002</th>
+									<th>003</th>
+									<th>004</th>
+									<th>001</th>
+									<th>002</th>
+									<th>003</th>
+									<th>004</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>lorem</td>
+									<td>ipsum</td>
+									<td>dolorem</td>
+									<td>sit amat</td>
+									<td>lorem</td>
+									<td>ipsum</td>
+									<td>dolorem</td>
+									<td>sit amat</td>
+									<td>lorem</td>
+									<td>ipsum</td>
+									<td>dolorem</td>
+									<td>sit amat</td>
+								</tr>
+								<tr>
+									<td>lorem</td>
+									<td>ipsum</td>
+									<td>dolorem</td>
+									<td>sit amat</td>
+									<td>lorem</td>
+									<td>ipsum</td>
+									<td>dolorem</td>
+									<td>sit amat</td>
+									<td>lorem</td>
+									<td>ipsum</td>
+									<td>dolorem</td>
+									<td>sit amat</td>
+								</tr>
+								<tr>
+									<td>lorem</td>
+									<td>ipsum</td>
+									<td>dolorem</td>
+									<td>sit amat</td>
+									<td>lorem</td>
+									<td>ipsum</td>
+									<td>dolorem</td>
+									<td>sit amat</td>
+									<td>lorem</td>
+									<td>ipsum</td>
+									<td>dolorem</td>
+									<td>sit amat</td>
+								</tr>
+							</tbody>
+						</table>
+					</div><!-- .table-scrollable -->
+				</div><!-- .col-12 l-col-6 -->
+			</div><!-- .row -->
+		</div><!-- .container -->
 </section>
-<section class="content bg-tertiary">
+
+<section class="content bg-tertiary" id="grid">
 		<div class="container">
 
 			<div class="row">
@@ -206,7 +358,7 @@
 		</div><!-- .container -->
 	</section>
 
-	<section class="content">
+	<section class="content" id="forms">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
@@ -257,30 +409,52 @@
 		</div>
 	</section>
 
-	<section class="content bg-grey">
+	<section class="content bg-grey" id="tabs">
 		<div class="container">
 			<div class="row">
-				<h3>Accordion</h3>
+				<div class="col-12">
+					<h3>Tabs</h3>
+					<ul class="tabs" data-tab="1">
+						<li><a href="#tab1">Tab</a></li>
+						<li><a href="#tab2" class="active">Tab</a></li>
+						<li><a href="#tab3">Tab</a></li>
+					</ul>
+					<ul class="tabs_content" data-tab="1">
+						<li data-id="#tab1">
+							<div class="row">
+								<div class="col-6"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, atque quod recusandae adipisci provident minus vitae maiores <a href="#">Link in a tab</a> aperiam nihil sit! Ipsa, repudiandae dolore sit laudantium necessitatibus tempora accusamus veniam cum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, illum!</p></div>
+								<div class="col-6"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, quod, reiciendis quas eius magnam natus iure a doloremque corrupti illum. Natus, quas, dolor, quo, praesentium excepturi voluptates eum officiis aperiam laboriosam labore sint ut quis voluptatibus recusandae in. Ratione, nesciunt!</p></div>
+							</div>
+						</li>
+						<li data-id="#tab2" class="active">
+							<p>Tabs for toggling multiple content on the same page. Can contain anything. <code><small>class="active"</small></code> is displayed first.</p>
+						</li>
+						<li data-id="#tab3">
+							<p>Tab 3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, maiores.</p>
+						</li>
+					</ul>
 
-				<dl class="accordion">
-					<dt>Panel 1</dt>
-					<dd class="active">Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</dd>
+					<h3 id="accordion">Accordion</h3>
+					<dl class="accordion">
+						<dt>Panel 1</dt>
+						<dd class="active">Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</dd>
 
-					<dt>Panel 2</dt>
-					<dd>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</dd>
+						<dt>Panel 2</dt>
+						<dd>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</dd>
 
-					<dt>Panel 3</dt>
-					<dd>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</dd>
-				</dl>
+						<dt>Panel 3</dt>
+						<dd>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</dd>
+					</dl>
 
+					<h4 id="tooltip">Tooltip</h4>
+					<p>Anything can have a <span class="tooltip" data-tooltip="Quick tip: Nice Tooltip">tooltip</span> and even a <span class="tooltip top" data-tooltip="Quick tip: Nice Tooltip">top tooltip</span> and even a <span class="tooltip left" data-tooltip="Quick tip: Nice Tooltip">left tooltip</span> and even a <span class="tooltip right" data-tooltip="Quick tip: Nice Tooltip">right tooltip.</span>  <span class="tooltip" data-tooltip="Lorem ipsum dolor sit amet, consectetur adipisicing elit."><i class="fa fa-info-circle fa-lg"></i></span></p>
 
-				<h4>Popups</h4>
-				<a href="#" class="popup">Popup <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, minus.</span></a>
+					<h4>Popups</h4>
+					<a href="#" class="popup">Popup <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, minus.</span></a>
 
-				<h4>Tooltip</h4>
-				<p>Anything can have a <span class="tooltip" data-tooltip="Quick tip: Nice Tooltip">tooltip</span> and even a <span class="tooltip top" data-tooltip="Quick tip: Nice Tooltip">top tooltip</span> and even a <span class="tooltip left" data-tooltip="Quick tip: Nice Tooltip">left tooltip</span> and even a <span class="tooltip right" data-tooltip="Quick tip: Nice Tooltip">right tooltip.</span></p>
-			</div>
-		</div>
+				</div><!-- .col-12 -->
+			</div><!-- .row -->
+		</div><!-- .container -->
 	</section>
 
 	<footer>
