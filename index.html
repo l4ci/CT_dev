@@ -21,7 +21,7 @@
 
 	<header>
 		<div class="container">
-			<div class="col-12">
+			<div class="xs-col-12">
 				<div class="logo text-hide" title="CT SCSS">CT SCSS</div>
 
 				<nav>
@@ -31,16 +31,16 @@
 
 						<li><a href="" class="active" title="Go home">Home</a></li>
 
-						<li class="dropdown" id="dropdown">
-							<a href="#1" title="Show all lists" class="dropdown-toggle">Dropdown <i class="fa fa-angle-down"></i></a>
-							<ul class="dropdown-menu">
+						<li class="dpd" id="dropdown">
+							<a href="#1" title="Show all lists" class="dpd-toggle">Dropdown <i class="fa fa-angle-down"></i></a>
+							<ul class="dpd-menu">
 								<li><a href="">First Item</a></li>
 								<li><a href="" class="active">Active Item</a></li>
-								<li class="divider"></li>
+								<li class="dpd-divider"></li>
 								<li><a href="">Second Item</a></li>
-								<li class="header">Header</li>
+								<li class="dpd-header">Header</li>
 								<li><a href="">Third Item</a></li>
-								<li class="header">Header</li>
+								<li class="dpd-header">Header</li>
 								<li><a href="">Third Item</a></li>
 								<li><a href="">Third Item</a></li>
 							</ul>
@@ -61,20 +61,61 @@
 	<section class="content bg-primary">
 		<div class="container">
 			<div class="row">
-				<div class="col-12">
+				<div class="xs-col-12">
 					<h1 class="hero">CT SCSS</h1>
 					<p class="lead">Whatever this means... this is a leading paragraph.</p>
 					<p>Lorem ipsum dolor <a href="">sit amet</a>, consectetur adipisicing elit. Laborum, ratione. Lorem ipsum dolor sit amet,onsectetur adipisicing elit. Modi maiores dicta exercitationem error enim quia deleniti debitis officia! Ut, iure quibusdam! Sunt, error tempore porro sed at ipsam nostrum omnis eligendi ex quis! Error, sit fugit ipsa ex fugiat accusantium odit accusamus maxime. Eligendi, velit atque soluta! Velit, maxime, laudantium, consectetur, facere nisi nulla voluptates voluptatibus obcaecati perferendis vitae tenetur culpa eum quaerat accusantium ducimus.</p>
 
-					<p><button class="large transparent space">Large Call to action</button></p>
+					<p><button class="btn-l btn-transparent spacing-m">Large Call to action</button></p>
 				</div>
 			</div><!-- .row -->
 		</div><!-- .container-->
 	</section>
 
-	<section class="content" id="basics">
+	<section class="content border-grey" id="colors">
 		<div class="container">
 
+			<div class="row">
+
+				<div class="xs-col-12">
+					<h2>Colors</h2>
+
+					<div class="xs-col-12 s-col-2 text-center bg-primary">
+						<p class="spacing-s">Primary</p>
+					</div><!-- .col -->
+					<div class="xs-col-12 s-col-2 text-center bg-secondary">
+						<p class="spacing-s">Secondary</p>
+					</div><!-- .col -->
+					<div class="xs-col-12 s-col-2 text-center bg-tertiary">
+						<p class="spacing-s">Tertiary</p>
+					</div><!-- .col -->
+					<div class="xs-col-12 s-col-1"></div>
+
+					<div class="xs-col-12 s-col-1 text-center bg-black">
+						<p class="spacing-s">Black</p>
+					</div><!-- .col -->
+					<div class="xs-col-12 s-col-1 text-center bg-darkgrey">
+						<p class="spacing-s">Darkgrey</p>
+					</div><!-- .col -->
+					<div class="xs-col-12 s-col-1 text-center bg-grey">
+						<p class="spacing-s">Grey</p>
+					</div><!-- .col -->
+					<div class="xs-col-12 s-col-1 text-center bg-white">
+						<p class="spacing-s">White</p>
+					</div><!-- .col -->
+				</div><!-- .col -->
+
+				<div class="xs-col-12">
+					<p class="spacing-m">All colors are automatically generated from only one main color (primary color). Even the darkgrey has a tiny amount of color in it.</p>
+				</div><!-- .col -->
+
+			</div><!-- .row -->
+
+		</div><!-- .container -->
+	</section>
+
+	<section class="content bg-grey">
+		<div class="container">
 			<div class="row">
 
 				<div class="xs-col-12 m-col-4">
@@ -151,11 +192,11 @@
 			<div class="container">
 				<div class="row">
 
-					<div class="col-12">
+					<div class="xs-col-12">
 						<h3>Tables</h3>
 					</div><!-- .col-12 -->
 
-					<div class="col-12 l-col-6">
+					<div class="xs-col-12 l-col-6">
 						<p><pre>class="table hover"</pre></p>
 						<table class="table hover">
 							<thead>
@@ -189,7 +230,7 @@
 						</table>
 					</div><!-- .col-12 l-col-6 -->
 
-					<div class="col-12 l-col-6">
+					<div class="xs-col-12 l-col-6">
 						<p><pre>class="table striped"</pre></p>
 						<table class="table striped">
 							<thead>
@@ -223,7 +264,7 @@
 						</table>
 					</div><!-- .col-12 l-col-6 -->
 
-					<div class="col-12 l-col-6">
+					<div class="xs-col-12 l-col-6">
 						<p><pre>class="table bordered"</pre></p>
 						<table class="table bordered">
 							<thead>
@@ -257,7 +298,7 @@
 						</table>
 					</div><!-- .col-12 l-col-6 -->
 
-					<div class="col-12 l-col-6">
+					<div class="xs-col-12 l-col-6">
 						<p><pre>.table</pre> wrapped in a <pre>.table-scrollable</pre> div</p>
 						<div class="table-scrollable">
 							<table class="table">
@@ -332,14 +373,14 @@
 		<div class="container">
 
 			<div class="row">
-				<div class="col-12">
+				<div class="xs-col-12">
 					<h2>Basic Grid System</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, magni, cumque, quia modi at obcaecati beatae distinctio veritatis assumenda placeat omnis incidunt autem suscipit tempora iure et rerum labore neque est expedita! Molestiae, ipsa, maxime, sit, eaque provident eius maiores a accusantium similique eum fuga explicabo esse temporibus rem ut? Placeat, maxime, quam, minima, labore blanditiis ipsa obcaecati autem corporis eligendi fugit vitae quaerat quibusdam atque voluptatem unde harum provident eius illum cumque accusantium consectetur ipsum voluptatum ipsam accusamus ullam voluptate in debitis. Nobis, eius, enim soluta earum error quos quae aperiam similique ducimus cumque tempora suscipit expedita eveniet. Laborum, nobis, saepe, qui recusandae <a href="#">Another Link</a> dolorum molestiae doloremque eum accusantium voluptatibus alias laudantium rem possimus. Et, dolorem, omnis, eum, cumque aut nemo porro animi error asperiores quisquam consequuntur ea cupiditate consequatur deleniti suscipit architecto aperiam eos perferendis ad quidem fugiat repudiandae cum illum ullam tempora recusandae hic molestiae saepe mollitia eligendi reprehenderit atque optio ipsum incidunt similique nihil amet. Harum, laborum, maxime, quibusdam quae quia adipisci minus beatae amet ullam eveniet ducimus corporis voluptates consequatur nisi obcaecati voluptas earum. Cum, nesciunt, molestias iste fugiat laborum esse minima eaque quos ab maiores harum fuga ipsam dolores dolorem architecto cumque earum eos placeat.</p>
 
 					<p>Followed by a simple <code>hr</code></p>
 				</div>
 
-				<div class="col-12"><hr></div>
+				<div class="xs-col-12"><hr></div>
 
 				<div class="xs-col-12 m-col-4">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, est obcaecati itaque officia excepturi sequi inventore sapiente nostrum aut fuga.</p>
@@ -365,59 +406,64 @@
 	<section class="content" id="forms">
 		<div class="container">
 			<div class="row">
-				<div class="col-12">
-					<h2>Formular Elements</h2>
-					<form action="#">
-					<fieldset>
-    				<legend>Input</legend>
-						<input type="text" placeholder="Text"><br>
-						<input type="password" placeholder="Password"><br>
-					</fieldset>
-				    <select size="1">
-				      <optgroup label="Namen mit A">
-				        <option label="Anna">Anna</option>
-				        <option label="Achim">Achim</option>
-				      </optgroup>
-				      <optgroup label="Namen mit B">
-				        <option label="Berta">Berta</option>
-				        <option label="Barbara">Barbara</option>
-				      </optgroup>
-				    </select><br>
-						<textarea placeholder="Textarea"></textarea><br>
-						<input type="radio"> <input type="radio"> <input type="radio"><br>
-						<input type="checkbox"> <input type="checkbox"> <input type="checkbox"><br>
+				<div class="xs-col-12">
+					<h2>Form Elements</h2>
 
-						<h4 id="buttons">Buttons</h4>
-						<input type="submit"><input type="reset"> <a href="" class="button">Link</a>
-						<h5>Buttons can be grouped together</h5>
-						<div class="button-group">
-							<button class="disabled">Disabled</button><a href="" class="button primary">Primary</a><a href="" class="button">Normal</a><a href="" class="button success">Success</a><a href="" class="button danger">Danger</a><a href="" class="button info">Info</a>
-						</div>
-						<h5>Buttons with different sizes</h5>
-						<button class="extrasmall">Extra Small</button>
-						<button class="small">Small</button>
-						<button class="">Default</button>
-						<button class="large">Large</button>
+					<div class="xs-col-12 m-col-6">
+						<fieldset>
+	    				<legend>Input</legend>
+							<input type="text" placeholder="Text"><br>
+							<input type="password" placeholder="Password"><br>
+						</fieldset>
+					    <select size="1">
+					      <optgroup label="Namen mit A">
+					        <option label="Anna">Anna</option>
+					        <option label="Achim">Achim</option>
+					      </optgroup>
+					      <optgroup label="Namen mit B">
+					        <option label="Berta">Berta</option>
+					        <option label="Barbara">Barbara</option>
+					      </optgroup>
+					    </select><br>
+							<textarea placeholder="Textarea"></textarea><br>
+							<input type="radio"> <input type="radio"> <input type="radio"><br>
+							<input type="checkbox"> <input type="checkbox"> <input type="checkbox"><br>
+						</div><!-- .col -->
 
-						<h5>Buttons can be block</h5>
-						<p>All buttons are blocks when on xs-viewport.</p>
-						<button class="block">Block Button</button>
+						<div class="xs-col-12 m-col-6">
+							<h4 id="buttons">Buttons</h4>
+							<input type="submit"><input type="reset"> <a href="" class="btn">Link</a>
+							<h5>Buttons can be grouped together</h5>
+							<div class="btn-group">
+								<button class="btn-disabled">Disabled</button><a href="" class="btn btn-primary">Primary</a><a href="" class="btn">Normal</a><a href="" class="btn btn-success">Success</a><a href="" class="btn btn-danger">Danger</a><a href="" class="btn btn-info">Info</a>
+							</div>
+							<h5>Buttons with different sizes</h5>
+							<button class="btn-xs">Extra Small</button>
+							<button class="btn-s">Small</button>
+							<button class="">Default</button>
+							<button class="btn-l">Large</button>
+							<button class="btn-xl">Extralarge</button>
 
-						<h5>Buttons can be transparent</h5>
-						<div style="background-color:#ccc;padding:20px;">
-							<button class="large transparent">Light / Default</button>
-							<button class="large transparent dark">Dark</button>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
+							<h5>Buttons can be block</h5>
+							<p>All buttons are blocks when on xs-viewport.</p>
+							<button class="btn-block">Block Button</button>
+
+							<h5>Buttons can be transparent</h5>
+							<div style="background-color:#ccc;padding:20px;">
+								<button class="btn-l btn-transparent">Light / Default</button>
+								<button class="btn-l btn-transparent-dark">Dark</button>
+							</div>
+						</div><!-- .col -->
+
+				</div><!-- .col -->
+			</div><!-- .row -->
+		</div><!-- .container -->
 	</section>
 
-	<section class="content bg-grey" id="tabs">
+	<section class="content bg-grey border-grey" id="tabs">
 		<div class="container">
 			<div class="row">
-				<div class="col-12">
+				<div class="xs-col-12">
 					<h3>Tabs</h3>
 					<ul class="tabs" data-tab="1">
 						<li><a href="#tab1">Tab</a></li>
@@ -462,24 +508,8 @@
 		</div><!-- .container -->
 	</section>
 
-	<section class="content bg-primary">
-		<div class="container">
-			<div class="row">
-				<div class="xs-col-12 m-col-8">
-					<h3>Some Prefooter text</h3>
-					<p>Yeah this is some serious pre footer text for contact info and stuff.</p>
-				</div><!-- .col -->
-				<div class="xs-col-12 m-col-4 xs-align-left m-align-right">
-					<p>
-						<a href="" class="button large transparent xs-block space">Contact us</a>
-					</p>
-				</div><!-- .col -->
-			</div><!-- .row -->
-		</div><!-- .container -->
-	</section>
 
-
-	<footer>
+	<footer id="footer">
 		<div class="container">
 			<div class="row">
 			<div class="xs-col-12 s-col-6">

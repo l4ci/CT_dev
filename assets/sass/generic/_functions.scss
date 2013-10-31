@@ -13,8 +13,6 @@
 //
 // Source: https://github.com/chriseppstein/compass/blob/stable/frameworks/compass/stylesheets/compass/utilities/color/_contrast.scss
 //
-$contrasted-dark-default:   #000 !default;
-$contrasted-light-default:  #fff !default;
 $contrasted-lightness-threshold: 30% !default;
 
 // Returns the `$light` color when the `$color` is dark
@@ -23,8 +21,8 @@ $contrasted-lightness-threshold: 30% !default;
 // when the lightness of `$color` changes from "dark" to "light".
 @function contrast-color(
   $color,
-  $dark: $contrasted-dark-default,
-  $light: $contrasted-light-default,
+  $dark: $color-black,
+  $light: $color-white,
   $threshold: $contrasted-lightness-threshold
 ) {
   @return if(lightness($color) < $threshold, $light, $dark)
@@ -34,8 +32,8 @@ $contrasted-lightness-threshold: 30% !default;
 // The arguments are passed through to the [contrast-color function](#function-contrast-color).
 @mixin contrasted(
   $background-color,
-  $dark: $contrasted-dark-default,
-  $light: $contrasted-light-default,
+  $dark: $color-black,
+  $light: $color-white,
   $threshold: $contrasted-lightness-threshold
 ) {
   background-color: $background-color;

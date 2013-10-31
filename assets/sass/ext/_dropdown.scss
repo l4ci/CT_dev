@@ -4,17 +4,17 @@
  * Basic dropdown menu - requires ext/_dropdown.js
  *
  **/
-.dropdown{
+.dpd{
 	display: block;
 	position: relative;
 
-	.dropdown-toggle{
+	.dpd-toggle{
 		&.open{
 			background: lightdark($header-background,5%);
 		}
 	}
 
-	ul.dropdown-menu{
+	ul.dpd-menu{
 		display: none;
 		background: lightdark($header-background,5%);
 		list-style: none;
@@ -26,10 +26,10 @@
 		z-index: 1000;
 		min-width: ($header-height * 3);
 
-		&.closed{
+		&.dpd-closed{
   		display: none;
   	}
-  	&.open{
+  	&.dpd-open{
   		display: block;
   	}
 
@@ -47,13 +47,13 @@
 				border-bottom: 3px solid lightdark($header-background,20%);
 			}
 
-			&.header{
+			&.dpd-header{
 				@include font-size(14px);
 				padding: 0 ($header-height / 4);
 				@include contrasted(lightdark($header-background,10%),invert($header-color),$header-color,70%);
 			}
 
-			&.divider{
+			&.dpd-divider{
 				display: block;
 				height: 1px;
 				background: lightdark($header-background,20%);
@@ -75,7 +75,7 @@
 		}
 	}
 	@media (max-width: $breakpoint-s-max){
-		ul.dropdown-menu{
+		ul.dpd-menu{
 			min-width: 100%;
 			position: relative;
 

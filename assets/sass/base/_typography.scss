@@ -114,3 +114,17 @@ h6,.h6,
 		}
 	}
 }
+
+// Different Spacings
+.spacing-s{
+	margin: ($base-line-height / 2) 0;
+}
+.spacing-m{
+	margin: $base-line-height 0;
+}
+.spacing-l{
+	margin: ($base-line-height * 2) 0;
+}
+.spacing-xl{
+	margin: ($base-line-height * 3) 0;
+}

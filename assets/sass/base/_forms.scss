@@ -34,5 +34,5 @@ input, textarea, select, button {
 input[type=submit],
 input[type=reset],
 button{
-	@extend .button;
+	@extend .btn;
 }

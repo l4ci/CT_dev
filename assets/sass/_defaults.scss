@@ -1,130 +1,133 @@
 /**
  * Grid
  */
-$grid-columns : 							12 	    !default; 	// 12, 16, whatever you like
-$grid-gutter  : 							30px    !default; 	// px only here
+$grid-columns : 							12 !default; 	// 12, 16, whatever you like
+$grid-gutter  : 							30px !default; 	// px only here
 
 // Define min width
-$breakpoint-xs-min:    				0px  		!default;
-$breakpoint-s-min:   					500px  	!default;
-$breakpoint-m-min:   					750px  	!default;
-$breakpoint-l-min:  					1000px  !default;
-$breakpoint-xl-min: 					1250px  !default;
+$breakpoint-xs-min:    				0px !default;
+$breakpoint-s-min:   					500px !default;
+$breakpoint-m-min:   					750px !default;
+$breakpoint-l-min:  					1000px !default;
+$breakpoint-xl-min: 					1250px !default;
 
 /**
  * Colors
  */
-$color-primary:          			#58a6c8!default;
-$color-secondary:        			darken($color-primary,20%)!default; // primary color but darker
-$color-tertiary:         			desaturate(lighten($color-primary,10%),40%)!default; // primary color but lighter and with less color
-$color-grey: 						 			desaturate(lighten($color-primary,40%),45%)!default; // try to get a grey with a light sense of the primary color
-$color-black: 								darken($color-primary,95%)!default;
-$color-white: 								lighten($color-primary,95%)!default;;
+$color-primary:          			#58a6c8 !default;
+$color-secondary:        			darken($color-primary,20%) !default; // primary color but darker
+$color-tertiary:         			desaturate(lighten($color-primary,10%),30%) !default; // primary color but lighter and with less color
 
-$color-text:             			#444!default;
-$color-text-light:       			#666!default;
-$color-background:      			#fff!default;
+$color-black: 								#333 !default;
+$color-white: 								#fafafa !default;
 
-$color-success: 							#71cf6a!default;
-$color-danger: 								#cf353c!default;
-$color-info: 									#6eb5cf!default;
+$color-darkgrey: 							lighten(desaturate(mix(mix($color-black,$color-white),$color-primary),20%),15%) !default;
+$color-grey: 						 			lighten($color-darkgrey,20%) !default;
+
+$color-text:             			$color-black !default;
+$color-text-light:       			$color-darkgrey !default;
+$color-background:      			$color-white !default;
+
+$color-success: 							#71cf6a !default;
+$color-danger: 								#cf353c !default;
+$color-info: 									#6eb5cf !default;
 
 /**
  * Google Webfonts
  */
-$google-fonts: 								unquote("Source+Sans+Pro:300,400,700,400italic")!default; // false OR unquote("Font+Name:weight,weight")
+$google-fonts: 								unquote("Source+Sans+Pro:300,400,700,400italic") !default; // false OR unquote("Font+Name:weight,weight")
 
 /**
  * Forms
  */
-$form-color:            			#666!default;
-$form-padding: 								0.5rem!default;
-$form-border: 								1px solid $color-grey!default;
-$form-border-radius:  				3px!default;
-$form-outline: 								none!default;
+$form-color:            			#666 !default;
+$form-padding: 								0.5rem !default;
+$form-border: 								1px solid $color-grey !default;
+$form-border-radius:  				3px !default;
+$form-outline: 								none !default;
 
 /**
  * Buttons
  */
-$button-color: 								#333!default;
-$button-border: 							1px solid !default;
-$button-border-color: 				#ccc!default;
-$button-border-radius:  			3px!default;
+$button-color: 								#333 !default;
+$button-border: 							1px solid  !default;
+$button-border-color: 				#ccc !default;
+$button-border-radius:  			3px !default;
 
-$button-background: 					#fff!default;
+$button-background: 					#fff !default;
 
-$button-primary: 							$color-primary!default;
-$button-success: 							$color-success!default;
-$button-danger: 							$color-danger!default;
-$button-info: 								$color-info!default;
+$button-primary: 							$color-primary !default;
+$button-success: 							$color-success !default;
+$button-danger: 							$color-danger !default;
+$button-info: 								$color-info !default;
 
 /**
  * Custom Selection
  */
-$selection-background: 				$color-primary!default;
-$selection-text:       				#fff!default;
+$selection-background: 				$color-primary !default;
+$selection-text:       				#fff !default;
 
 /**
  * Font families
  */
-$font-family-primary:    			'Source Sans Pro', "Helvetica Neue", Arial, sans-serif!default;
-$font-family-secondary:  			'Source Sans Pro', "Helvetica Neue", Arial, sans-serif!default;
-$font-family-input:      			'Source Sans Pro', "Helvetica Neue", Arial, sans-serif!default;
+$font-family-primary:    			'Source Sans Pro', "Helvetica Neue", Arial, sans-serif !default;
+$font-family-secondary:  			'Source Sans Pro', "Helvetica Neue", Arial, sans-serif !default;
+$font-family-input:      			'Source Sans Pro', "Helvetica Neue", Arial, sans-serif !default;
 
 /**
  * Font sizes
  */
-$base-font-size:         			16px!default;
-$base-line-height:       			24px!default;
+$base-font-size:         			16px !default;
+$base-line-height:       			24px !default;
 
-$size-hero:              			96px!default;
-$size-lead:              			32px!default;
+$size-hero:              			96px !default;
+$size-lead:              			32px !default;
 
-$size-h1:                			46px!default;
-$size-h2:                			40px!default;
-$size-h3:                			36px!default;
-$size-h4:                			30px!default;
-$size-h5:                			20px!default;
-$size-h6:                			16px!default;
+$size-h1:                			46px !default;
+$size-h2:                			40px !default;
+$size-h3:                			36px !default;
+$size-h4:                			30px !default;
+$size-h5:                			20px !default;
+$size-h6:                			16px !default;
 
-$size-milli:             			12px!default;
-$size-micro:             			10px!default;
+$size-milli:             			12px !default;
+$size-micro:             			10px !default;
 
 
 /**
  * Header
  */
-$header-background: 					$color-secondary!default;
-$header-height: 							60px!default;
-$header-color: 								#fff!default;
+$header-background: 					$color-secondary !default;
+$header-height: 							60px !default;
+$header-color: 								#fff !default;
 
 /**
  * Footer
  */
-$footer-background: 					$color-secondary!default;
-$footer-border: 							none!default;
-$footer-color: 								#fff!default;
+$footer-background: 					$color-black !default;
+$footer-border: 							none !default;
+$footer-color: 								$color-white !default;
 
 /**
  * Tabs
  */
-$tab-border : 								1px!default;
-$tab-padding : 								40px!default;
-$tab-margin : 								10px!default;
+$tab-border : 								1px !default;
+$tab-padding : 								40px !default;
+$tab-margin : 								10px !default;
 $tab-border-color : 					lighten($color-text,20%) !default;
-$tab-background-color : 			$color-grey!default;
+$tab-background-color : 			$color-grey !default;
 
 /**
  * Sidebar
  */
-$sidebar-background: 					$color-secondary 		!default;
-$sidebar-border: 							1px solid #E5E5E5 	!default;
+$sidebar-background: 					$color-secondary 	!default;
+$sidebar-border: 							1px solid #E5E5E5 !default;
 
 /**
  * Tooltip
  */
-$tooltip-size: 							  14px 		!default;
-$tooltip-color: 							#fff 		!default;
-$tooltip-background-color:  	darken($color-grey,70%)!default;
-$tooltip-border:   						none 		!default;
-$tooltip-border-radius:   		3px 		!default;
+$tooltip-size: 							  14px !default;
+$tooltip-color: 							#fff !default;
+$tooltip-background-color:  	darken($color-grey,70%) !default;
+$tooltip-border:   						none !default;
+$tooltip-border-radius:   		3px !default;

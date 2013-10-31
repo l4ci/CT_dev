@@ -1,0 +1,58 @@
+/**
+ * Background Colors & Border Variations from basic colors
+ */
+.bg-primary{
+	@include contrasted($color-primary,$color-black,$color-white,70%);
+}
+.border-primary{
+	border-top: 1px solid lightdark($color-primary,20%);
+	border-bottom: 1px solid lightdark($color-primary,20%);
+}
+
+.bg-secondary{
+	@include contrasted($color-secondary,$color-black,$color-white,70%);
+}
+.border-secondary{
+	border-top: 1px solid lightdark($color-secondary,20%);
+	border-bottom: 1px solid lightdark($color-secondary,20%);
+}
+
+.bg-tertiary{
+	@include contrasted($color-tertiary,$color-black,$color-white);
+}
+.border-tertiary{
+	border-top: 1px solid lightdark($color-tertiary,20%);
+	border-bottom: 1px solid lightdark($color-tertiary,20%);
+}
+
+.bg-black{
+	@include contrasted($color-black,$color-black,$color-white);
+}
+.border-black{
+	border-top: 1px solid lightdark($color-black,20%);
+	border-bottom: 1px solid lightdark($color-black,20%);
+}
+
+.bg-grey{
+	@include contrasted($color-grey,$color-black,$color-white);
+}
+.border-grey{
+	border-top: 1px solid lightdark($color-grey,20%);
+	border-bottom: 1px solid lightdark($color-grey,20%);
+}
+
+.bg-darkgrey{
+	@include contrasted($color-darkgrey,$color-black,$color-white);
+}
+.border-darkgrey{
+	border-top: 1px solid lightdark($color-darkgrey,20%);
+	border-bottom: 1px solid lightdark($color-darkgrey,20%);
+}
+
+.bg-white{
+	@include contrasted($color-white,$color-black,$color-white);
+}
+.border-white{
+	border-top: 1px solid lightdark($color-white,20%);
+	border-bottom: 1px solid lightdark($color-white,20%);
+}

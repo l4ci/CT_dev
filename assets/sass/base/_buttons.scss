@@ -1,7 +1,7 @@
 /**
  * Base button styles.
  */
-.button {
+.btn {
 	-webkit-font-smoothing: inherit;
 	font-family: $font-family-primary;
 	font-weight: normal;
@@ -37,7 +37,7 @@
 	}
 
 	// Block Button
-	&.block{
+	&.btn-block{
 		display: block;
 		width: 100%;
 	}
@@ -51,29 +51,29 @@
 	}
 
 	// Sizes
-	&.extrasmall{
+	&.btn-xs{
 		@include font-size(13px,false);
 		padding: 0 0.4rem;
   	line-height: 1.5;
 	}
-	&.small{
+	&.btn-s{
 		@include font-size(14px,false);
 		padding: 0 0.5rem;
   	line-height: 2;
 	}
-	&.large{
+	&.btn-l{
 		@include font-size(20px,false);
 		padding: 0 2rem;
   	line-height: 2.8;
 	}
-
-	&.space{
-		margin-top: $base-line-height;
-		margin-bottom: $base-line-height;
+	&.btn-xl{
+		@include font-size(28px,false);
+		padding: 0 3rem;
+  	line-height: 3;
 	}
 
 	// Disabled Button
-	&.disabled,
+	&.btn-disabled,
 	[attr="disabled"]{
 		color: #666;
 		background: #ccc;
@@ -89,7 +89,7 @@
 
 
 	// Color Variations
-	&.primary{
+	&.btn-primary{
 		background: $button-primary;
 		border-color: $button-primary;
 
@@ -100,7 +100,7 @@
 			background: lightdark($button-primary,5%);
 		}
 	}
-	&.success{
+	&.btn-success{
 		background: $button-success;
 		border-color: $button-success;
 
@@ -111,7 +111,7 @@
 			background: lightdark($button-success,5%);
 		}
 	}
-	&.danger{
+	&.btn-danger{
 		background: $button-danger;
 		border-color: $button-danger;
 
@@ -122,7 +122,7 @@
 			background: lightdark($button-danger,5%);
 		}
 	}
-	&.info{
+	&.btn-info{
 		background: $button-info;
 		border-color: $button-info;
 
@@ -134,7 +134,7 @@
 		}
 	}
 
-	&.transparent{
+	&.btn-transparent{
 		color: #fff;
 		background: transparent;
 		border-color: #fff;
@@ -145,18 +145,18 @@
 			border-color: #fff;
 			background: rgba(#fff,0.1);
 		}
+	}
 
-		&.dark{
-			color: #000;
-			background: transparent;
+	&.btn-transparent-dark{
+		color: #000;
+		background: transparent;
+		border-color: #000;
+
+		&:active,
+		&:hover,
+		&:focus{
 			border-color: #000;
-
-			&:active,
-			&:hover,
-			&:focus{
-				border-color: #000;
-				background: rgba(#000,0.1);
-			}
+			background: rgba(#000,0.1);
 		}
 	}
 
@@ -164,16 +164,16 @@
 }
 
 // Button Groups
-.button-group{
-	.button{
+.btn-group{
+	.btn{
 		border-radius: 0;
 		margin:0 0 $base-line-height 0;
 	}
-	.button:first-child{
+	.btn:first-child{
 		border-top-left-radius: 3px;
 		border-bottom-left-radius: 3px;
 	}
-	.button:last-child{
+	.btn:last-child{
 		border-top-right-radius: 3px;
 		border-bottom-right-radius: 3px;
 	}
