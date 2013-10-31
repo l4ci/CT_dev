@@ -2,6 +2,7 @@
 	border-right: $sidebar-border;
 	text-align: right;
 	margin-bottom: $base-line-height;
+	@include contrasted($sidebar-background,$color-black,$color-white,70%);
 
 	.title{
 		text-transform: uppercase;
@@ -9,7 +10,7 @@
 		font-weight: bold;
 		padding: 0.5em 2em .75em 0;
 		margin-top: $base-line-height;
-		color: lightdark($sidebar-background,80%);
+		color: inherit;
 
 		&:first-child{
 			margin-top:0;
@@ -29,11 +30,11 @@
 				padding:0.5em 2em 0.5em 1em;
 				display: block;
 				border:none;
-				color: lightdark($sidebar-background,50%);
+				color: inherit;
 
 				&.active,
 				&:hover{
-					color: lightdark($sidebar-background,70%);
+					color: inherit;
 					background: lightdark($sidebar-background,5%);
 				}
 			}

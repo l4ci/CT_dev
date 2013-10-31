@@ -49,9 +49,8 @@
 
 			&.header{
 				@include font-size(14px);
-				background: lightdark($header-background,10%);
 				padding: 0 ($header-height / 4);
-				color: $header-color;
+				@include contrasted(lightdark($header-background,10%),invert($header-color),$header-color,70%);
 			}
 
 			&.divider{
@@ -61,7 +60,7 @@
 			}
 
 			a{
-				color: $header-color;
+				@include contrasted($header-background,invert($header-color),$header-color,70%);
 	    	display: block;
 	    	padding: 0 15px;
 

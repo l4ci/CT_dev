@@ -1,10 +1,25 @@
 /**
+ * Grid
+ */
+$grid-columns : 							12 	    !default; 	// 12, 16, whatever you like
+$grid-gutter  : 							30px    !default; 	// px only here
+
+// Define min width
+$breakpoint-xs-min:    				0px  		!default;
+$breakpoint-s-min:   					500px  	!default;
+$breakpoint-m-min:   					750px  	!default;
+$breakpoint-l-min:  					1000px  !default;
+$breakpoint-xl-min: 					1250px  !default;
+
+/**
  * Colors
  */
 $color-primary:          			#58a6c8!default;
 $color-secondary:        			darken($color-primary,20%)!default; // primary color but darker
 $color-tertiary:         			desaturate(lighten($color-primary,10%),40%)!default; // primary color but lighter and with less color
 $color-grey: 						 			desaturate(lighten($color-primary,40%),45%)!default; // try to get a grey with a light sense of the primary color
+$color-black: 								darken($color-primary,95%)!default;
+$color-white: 								lighten($color-primary,95%)!default;;
 
 $color-text:             			#444!default;
 $color-text-light:       			#666!default;
@@ -113,16 +128,3 @@ $tooltip-color: 							#fff 		!default;
 $tooltip-background-color:  	darken($color-grey,70%)!default;
 $tooltip-border:   						none 		!default;
 $tooltip-border-radius:   		3px 		!default;
-
-/**
- * Grid
- */
-$grid-columns : 							12 	    !default; 	// 12, 16, whatever you like
-$grid-gutter  : 							30px    !default; 	// px only here
-
-// Define min width
-$breakpoint-xs-min:    				0px  		!default;
-$breakpoint-s-min:   					500px  	!default;
-$breakpoint-m-min:   					750px  	!default;
-$breakpoint-l-min:  					1000px  !default;
-$breakpoint-xl-min: 					1250px  !default;

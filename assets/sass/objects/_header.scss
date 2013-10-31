@@ -36,10 +36,9 @@ nav{
 	    line-height: $header-height;
 
 	    & > a{
-	    	color: $header-color;
 	    	display: block;
 	    	padding: 0 ($header-height / 4);
-	    	background: $header-background;
+	    	@include contrasted($header-background,invert($header-color),$header-color,70%);
 
 				&.active{
 					background: lightdark($header-background,5%);

@@ -2,20 +2,16 @@
 	padding:$base-line-height 0;
 
 	&.bg-primary{
-		color: #fff;
-		background: $color-primary;
+		@include contrasted($color-primary,$color-black,$color-white,70%);
 
 	}
 	&.bg-secondary{
-		color: lightdark($color-secondary,80%);
-		background: $color-secondary;
+		@include contrasted($color-secondary,$color-black,$color-white,70%);
 	}
 	&.bg-tertiary{
-		color: lightdark($color-tertiary,80%);
-		background: $color-tertiary;
+		@include contrasted($color-tertiary,$color-black,$color-white);
 	}
 	&.bg-grey{
-		color: lightdark($color-grey,80%);
-		background: $color-grey;
+		@include contrasted($color-grey,$color-black,$color-white);
 	}
 }
