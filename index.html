@@ -27,13 +27,15 @@
 				<nav>
 					<a href="#" id="togglemenu"><i class="fa fa-reorder fa-lg" title="Show menu"></i></a>
 
-					<ul class="nav">
+					<ul class="nav" id="nav">
+
 						<li><a href="" class="active" title="Go home">Home</a></li>
-						<li class="dropdown">
+
+						<li class="dropdown" id="dropdown">
 							<a href="#1" title="Show all lists" class="dropdown-toggle">Dropdown <i class="fa fa-angle-down"></i></a>
 							<ul class="dropdown-menu">
 								<li><a href="">First Item</a></li>
-								<li><a href="">First Item</a></li>
+								<li><a href="" class="active">Active Item</a></li>
 								<li class="divider"></li>
 								<li><a href="">Second Item</a></li>
 								<li class="header">Header</li>
@@ -43,6 +45,8 @@
 								<li><a href="">Third Item</a></li>
 							</ul>
 						</li>
+
+						<li><a href="">Item</a></li>
 					</ul>
 
 					<ul class="nav right">
@@ -62,7 +66,7 @@
 					<p class="lead">Whatever this means... this is a leading paragraph.</p>
 					<p>Lorem ipsum dolor <a href="">sit amet</a>, consectetur adipisicing elit. Laborum, ratione. Lorem ipsum dolor sit amet,onsectetur adipisicing elit. Modi maiores dicta exercitationem error enim quia deleniti debitis officia! Ut, iure quibusdam! Sunt, error tempore porro sed at ipsam nostrum omnis eligendi ex quis! Error, sit fugit ipsa ex fugiat accusantium odit accusamus maxime. Eligendi, velit atque soluta! Velit, maxime, laudantium, consectetur, facere nisi nulla voluptates voluptatibus obcaecati perferendis vitae tenetur culpa eum quaerat accusantium ducimus.</p>
 
-					<p><button class="large transparent">Large Call to action</button></p>
+					<p><button class="large transparent space">Large Call to action</button></p>
 				</div>
 			</div><!-- .row -->
 		</div><!-- .container-->
@@ -110,167 +114,56 @@
 				</div>
 
 			</div><!-- .row -->
-</div><!-- .container -->
-</section>
-
-<section class="content bg-secondary" id="sidebar">
-		<div class="container">
-			<div class="row">
-				<div class="col-3">
-
-					<div class="sidebar">
-						<div class="title">Sidebar</div>
-						<ul>
-							<li><a href="">Menü #1</a></li>
-							<li><a href="" class="active">Menü #2</a></li>
-							<li><a href="">Menü #3</a></li>
-						</ul>
-						<div class="title">Sidebar 2</div>
-						<ul>
-							<li><a href="">Menü #1</a></li>
-							<li><a href="">Menü #2</a></li>
-							<li><a href="">Menü #3</a></li>
-						</ul>
-					</div>
-
-				</div>
-				<div class="col-9">
-					<h2>A Sidebar</h2>
-					<p>Sidebar consists of links/anchors to anything you want.</p>
-					<p>Blanditiis, velit, iure consequuntur cupiditate reprehnderit sint autem nesciunt veniam. Eveniet, voluptate, aliquid, quidem, rerum in nisi ea esse sapiente. <a href="#">Link in the sidebar</a> eum inventore ut quae quam libero ipsa perferendis cum temporibus porro sed eos sint. Ullam, aspernatur, rerum perferendis voluptatum aliquid sit eius doloremque quis possimus dolorum ex nostrum perspiciatis consequuntur neque alias cupiditate modi vitae illo sed quas deleniti nisi provident delectus explicabo magni velit earum consectetur optio obcaecati quidem beatae odit voluptatibus labore inventore repudiandae maxime vel. Maxime, reprehenderit velit vel. Totam, a, nisi, repellendus, voluptatibus iste neque in perferendis vitae eveniet vero temporibus fuga minus laborum corrupti necessitatibus magni.</p>
-				</div>
-			</div><!-- .row -->
 		</div><!-- .container -->
-</section>
+	</section>
 
-<section class="content bg-grey" id="tables">
-		<div class="container">
-			<div class="row">
+	<section class="content bg-secondary" id="sidebar">
+			<div class="container">
+				<div class="row">
+					<div class="col-3">
 
-				<div class="col-12">
-					<h3>Tables</h3>
-				</div><!-- .col-12 -->
+						<div class="sidebar">
+							<div class="title">Sidebar</div>
+							<ul>
+								<li><a href="">Menü #1</a></li>
+								<li><a href="" class="active">Menü #2</a></li>
+								<li><a href="">Menü #3</a></li>
+							</ul>
+							<div class="title">Sidebar 2</div>
+							<ul>
+								<li><a href="">Menü #1</a></li>
+								<li><a href="">Menü #2</a></li>
+								<li><a href="">Menü #3</a></li>
+							</ul>
+						</div>
 
-				<div class="col-12 l-col-6">
-					<p><pre>class="table hover"</pre></p>
-					<table class="table hover">
-						<thead>
-							<tr>
-								<th>#</th>
-								<th>First</th>
-								<th>Last</th>
-								<th>Something</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>lorem</td>
-								<td>ipsum</td>
-								<td>dolorem</td>
-								<td>sit amat</td>
-							</tr>
-							<tr>
-								<td>lorem</td>
-								<td>ipsum</td>
-								<td>dolorem</td>
-								<td>sit amat</td>
-							</tr>
-							<tr>
-								<td>lorem</td>
-								<td>ipsum</td>
-								<td>dolorem</td>
-								<td>sit amat</td>
-							</tr>
-						</tbody>
-					</table>
-				</div><!-- .col-12 l-col-6 -->
+					</div>
+					<div class="col-9">
+						<h2>A Sidebar</h2>
+						<p>Sidebar consists of links/anchors to anything you want.</p>
+						<p>Blanditiis, velit, iure consequuntur cupiditate reprehnderit sint autem nesciunt veniam. Eveniet, voluptate, aliquid, quidem, rerum in nisi ea esse sapiente. <a href="#">Link in the sidebar</a> eum inventore ut quae quam libero ipsa perferendis cum temporibus porro sed eos sint. Ullam, aspernatur, rerum perferendis voluptatum aliquid sit eius doloremque quis possimus dolorum ex nostrum perspiciatis consequuntur neque alias cupiditate modi vitae illo sed quas deleniti nisi provident delectus explicabo magni velit earum consectetur optio obcaecati quidem beatae odit voluptatibus labore inventore repudiandae maxime vel. Maxime, reprehenderit velit vel. Totam, a, nisi, repellendus, voluptatibus iste neque in perferendis vitae eveniet vero temporibus fuga minus laborum corrupti necessitatibus magni.</p>
+					</div>
+				</div><!-- .row -->
+			</div><!-- .container -->
+	</section>
 
-				<div class="col-12 l-col-6">
-					<p><pre>class="table striped"</pre></p>
-					<table class="table striped">
-						<thead>
-							<tr>
-								<th>#</th>
-								<th>First</th>
-								<th>Last</th>
-								<th>Something</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>lorem</td>
-								<td>ipsum</td>
-								<td>dolorem</td>
-								<td>sit amat</td>
-							</tr>
-							<tr>
-								<td>lorem</td>
-								<td>ipsum</td>
-								<td>dolorem</td>
-								<td>sit amat</td>
-							</tr>
-							<tr>
-								<td>lorem</td>
-								<td>ipsum</td>
-								<td>dolorem</td>
-								<td>sit amat</td>
-							</tr>
-						</tbody>
-					</table>
-				</div><!-- .col-12 l-col-6 -->
+	<section class="content bg-grey" id="tables">
+			<div class="container">
+				<div class="row">
 
-				<div class="col-12 l-col-6">
-					<p><pre>class="table bordered"</pre></p>
-					<table class="table bordered">
-						<thead>
-							<tr>
-								<th>#</th>
-								<th>First</th>
-								<th>Last</th>
-								<th>Something</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>lorem</td>
-								<td>ipsum</td>
-								<td>dolorem</td>
-								<td>sit amat</td>
-							</tr>
-							<tr>
-								<td>lorem</td>
-								<td>ipsum</td>
-								<td>dolorem</td>
-								<td>sit amat</td>
-							</tr>
-							<tr>
-								<td>lorem</td>
-								<td>lorem</td>
-								<td>ipsum</td>
-								<td>dolorem</td>
-							</tr>
-						</tbody>
-					</table>
-				</div><!-- .col-12 l-col-6 -->
+					<div class="col-12">
+						<h3>Tables</h3>
+					</div><!-- .col-12 -->
 
-				<div class="col-12 l-col-6">
-					<p><pre>.table</pre> wrapped in a <pre>.table-scrollable</pre> div</p>
-					<div class="table-scrollable">
-						<table class="table">
+					<div class="col-12 l-col-6">
+						<p><pre>class="table hover"</pre></p>
+						<table class="table hover">
 							<thead>
 								<tr>
 									<th>#</th>
 									<th>First</th>
 									<th>Last</th>
 									<th>Something</th>
-									<th>001</th>
-									<th>002</th>
-									<th>003</th>
-									<th>004</th>
-									<th>001</th>
-									<th>002</th>
-									<th>003</th>
-									<th>004</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -279,38 +172,14 @@
 									<td>ipsum</td>
 									<td>dolorem</td>
 									<td>sit amat</td>
-									<td>lorem</td>
-									<td>ipsum</td>
-									<td>dolorem</td>
-									<td>sit amat</td>
-									<td>lorem</td>
-									<td>ipsum</td>
-									<td>dolorem</td>
-									<td>sit amat</td>
 								</tr>
 								<tr>
 									<td>lorem</td>
 									<td>ipsum</td>
 									<td>dolorem</td>
 									<td>sit amat</td>
-									<td>lorem</td>
-									<td>ipsum</td>
-									<td>dolorem</td>
-									<td>sit amat</td>
-									<td>lorem</td>
-									<td>ipsum</td>
-									<td>dolorem</td>
-									<td>sit amat</td>
 								</tr>
 								<tr>
-									<td>lorem</td>
-									<td>ipsum</td>
-									<td>dolorem</td>
-									<td>sit amat</td>
-									<td>lorem</td>
-									<td>ipsum</td>
-									<td>dolorem</td>
-									<td>sit amat</td>
 									<td>lorem</td>
 									<td>ipsum</td>
 									<td>dolorem</td>
@@ -318,13 +187,148 @@
 								</tr>
 							</tbody>
 						</table>
-					</div><!-- .table-scrollable -->
-				</div><!-- .col-12 l-col-6 -->
-			</div><!-- .row -->
-		</div><!-- .container -->
-</section>
+					</div><!-- .col-12 l-col-6 -->
 
-<section class="content bg-tertiary" id="grid">
+					<div class="col-12 l-col-6">
+						<p><pre>class="table striped"</pre></p>
+						<table class="table striped">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>First</th>
+									<th>Last</th>
+									<th>Something</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>lorem</td>
+									<td>ipsum</td>
+									<td>dolorem</td>
+									<td>sit amat</td>
+								</tr>
+								<tr>
+									<td>lorem</td>
+									<td>ipsum</td>
+									<td>dolorem</td>
+									<td>sit amat</td>
+								</tr>
+								<tr>
+									<td>lorem</td>
+									<td>ipsum</td>
+									<td>dolorem</td>
+									<td>sit amat</td>
+								</tr>
+							</tbody>
+						</table>
+					</div><!-- .col-12 l-col-6 -->
+
+					<div class="col-12 l-col-6">
+						<p><pre>class="table bordered"</pre></p>
+						<table class="table bordered">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>First</th>
+									<th>Last</th>
+									<th>Something</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>lorem</td>
+									<td>ipsum</td>
+									<td>dolorem</td>
+									<td>sit amat</td>
+								</tr>
+								<tr>
+									<td>lorem</td>
+									<td>ipsum</td>
+									<td>dolorem</td>
+									<td>sit amat</td>
+								</tr>
+								<tr>
+									<td>lorem</td>
+									<td>lorem</td>
+									<td>ipsum</td>
+									<td>dolorem</td>
+								</tr>
+							</tbody>
+						</table>
+					</div><!-- .col-12 l-col-6 -->
+
+					<div class="col-12 l-col-6">
+						<p><pre>.table</pre> wrapped in a <pre>.table-scrollable</pre> div</p>
+						<div class="table-scrollable">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>#</th>
+										<th>First</th>
+										<th>Last</th>
+										<th>Something</th>
+										<th>001</th>
+										<th>002</th>
+										<th>003</th>
+										<th>004</th>
+										<th>001</th>
+										<th>002</th>
+										<th>003</th>
+										<th>004</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>lorem</td>
+										<td>ipsum</td>
+										<td>dolorem</td>
+										<td>sit amat</td>
+										<td>lorem</td>
+										<td>ipsum</td>
+										<td>dolorem</td>
+										<td>sit amat</td>
+										<td>lorem</td>
+										<td>ipsum</td>
+										<td>dolorem</td>
+										<td>sit amat</td>
+									</tr>
+									<tr>
+										<td>lorem</td>
+										<td>ipsum</td>
+										<td>dolorem</td>
+										<td>sit amat</td>
+										<td>lorem</td>
+										<td>ipsum</td>
+										<td>dolorem</td>
+										<td>sit amat</td>
+										<td>lorem</td>
+										<td>ipsum</td>
+										<td>dolorem</td>
+										<td>sit amat</td>
+									</tr>
+									<tr>
+										<td>lorem</td>
+										<td>ipsum</td>
+										<td>dolorem</td>
+										<td>sit amat</td>
+										<td>lorem</td>
+										<td>ipsum</td>
+										<td>dolorem</td>
+										<td>sit amat</td>
+										<td>lorem</td>
+										<td>ipsum</td>
+										<td>dolorem</td>
+										<td>sit amat</td>
+									</tr>
+								</tbody>
+							</table>
+						</div><!-- .table-scrollable -->
+					</div><!-- .col-12 l-col-6 -->
+				</div><!-- .row -->
+			</div><!-- .container -->
+	</section>
+
+	<section class="content bg-tertiary" id="grid">
 		<div class="container">
 
 			<div class="row">
@@ -383,7 +387,7 @@
 						<input type="radio"> <input type="radio"> <input type="radio"><br>
 						<input type="checkbox"> <input type="checkbox"> <input type="checkbox"><br>
 
-						<h4>Buttons</h4>
+						<h4 id="buttons">Buttons</h4>
 						<input type="submit"><input type="reset"> <a href="" class="button">Link</a>
 						<h5>Buttons can be grouped together</h5>
 						<div class="button-group">
@@ -396,6 +400,7 @@
 						<button class="large">Large</button>
 
 						<h5>Buttons can be block</h5>
+						<p>All buttons are blocks when on xs-viewport.</p>
 						<button class="block">Block Button</button>
 
 						<h5>Buttons can be transparent</h5>
@@ -453,6 +458,22 @@
 					<a href="#" class="popup">Popup <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, minus.</span></a>
 
 				</div><!-- .col-12 -->
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
+
+	<section class="content bg-primary">
+		<div class="container">
+			<div class="row">
+				<div class="xs-col-12 m-col-8">
+					<h3>Some Prefooter text</h3>
+					<p>Yeah this is some serious pre footer text for contact info and stuff.</p>
+				</div><!-- .col -->
+				<div class="xs-col-12 m-col-4 xs-align-left m-align-right">
+					<p>
+						<a href="" class="button large transparent xs-block space">Contact us</a>
+					</p>
+				</div><!-- .col -->
 			</div><!-- .row -->
 		</div><!-- .container -->
 	</section>

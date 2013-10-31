@@ -7,7 +7,9 @@
 /**
  * Google Webfonts
  */
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic);
+@if ($google-fonts != false){
+	@import url("http://fonts.googleapis.com/css?family=#{$google-fonts}");
+}
 
 /**
  * Load all generic classes
@@ -42,6 +44,6 @@
 /**
  * Load all objects
  */
-@import "objects/nav";
+@import "objects/header";
 @import "objects/content";
 @import "objects/footer";

@@ -42,6 +42,14 @@
 		width: 100%;
 	}
 
+	// All Buttons are block buttons on extra small
+  @media (max-width: $breakpoint-xs-max){
+		& {
+			display: block;
+			width: 100%;
+		}
+	}
+
 	// Sizes
 	&.extrasmall{
 		@include font-size(13px,false);
@@ -57,6 +65,11 @@
 		@include font-size(20px,false);
 		padding: 0 2rem;
   	line-height: 2.8;
+	}
+
+	&.space{
+		margin-top: $base-line-height;
+		margin-bottom: $base-line-height;
 	}
 
 	// Disabled Button

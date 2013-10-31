@@ -13,7 +13,7 @@ jQuery( document ).ready(function( $ ) {
 		var getContainer		= $('.nav');
 
 		// Toggle Class and Animate
-		getContainer.slideToggle('slow', function(){
+		getContainer.slideToggle(300, function(){
 				if ($(this).is(":visible") === false){
 					$(this).removeClass('open').addClass('closed').removeAttr('style');
 				} else {
@@ -50,8 +50,13 @@ jQuery( document ).ready(function( $ ) {
   // Dropdown
   $('.dropdown .dropdown-toggle').click(function(e){
 		e.preventDefault();
+
+		$(this).toggleClass('open');
+		// Change icon if any
+		$(this).find('i.fa').toggleClass('fa-angle-down fa-angle-up');
+
 		// Toggle Class and Animate
-		$(this).next('.dropdown-menu').slideToggle('slow', function(){
+		$(this).next('.dropdown-menu').slideToggle(300, function(){
 				if ($(this).is(":visible") === false){
 					$(this).removeClass('open').addClass('closed').removeAttr('style');
 				} else {
@@ -69,14 +74,11 @@ jQuery( document ).ready(function( $ ) {
 		var target = $(this).next();
 
 		if(!target.hasClass('active')){
-			// allPanels.slideUp('slow', function(){
-			// 	$(this).removeClass('active');
-			// });
 			allPanels.slideUp(300,function(){
 				$(this).removeClass('active').removeAttr('style');
 			});
 			target.slideDown(300,function(){
-				$(this).addClass('active').removeAttr('style')
+				$(this).addClass('active').removeAttr('style');
 			});
 		}
 	});

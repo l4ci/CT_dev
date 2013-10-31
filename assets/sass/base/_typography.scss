@@ -99,3 +99,18 @@ code{
 	padding: 2px 5px;
 	background: lightdark($color-grey,10%);
 }
+
+h1,.h1,
+h2,.h2,
+h3,.h3,
+h4,.h4,
+h5,.h5,
+h6,.h6,
+.lead,
+.hero{
+	@media (max-width: $breakpoint-xs-max){
+		& {
+			margin: ($base-line-height / 3) 0 ($base-line-height / 2);
+		}
+	}
+}

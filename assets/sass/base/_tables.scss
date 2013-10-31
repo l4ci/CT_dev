@@ -21,7 +21,7 @@ table.table{
 	// Table with stripes
 	&.striped{
 		tr:nth-child(odd) > td{
-			background-color: #F9F9F9;
+			background-color: lighten($color-grey,20%);
 		}
 	}
 
@@ -41,7 +41,7 @@ table.table{
 	// Table with hover
 	&.hover{
 		tr:hover > td{
-			background-color: #F5F5F5;
+			background-color: darken($color-grey,5%);
 		}
 	}
 }

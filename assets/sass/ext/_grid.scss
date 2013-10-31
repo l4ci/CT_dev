@@ -8,25 +8,12 @@
  *
  **/
 
-$grid-columns : 12 	    !default; 	// 12, 16, whatever you like
-$grid-gutter  : 30px    !default; 	// px only here
-
-/**
- * Breakpoints
- */
-
-// Define min width
-$breakpoint-xs-min:    0px  !default;
-$breakpoint-s-min:   500px  !default;
-$breakpoint-m-min:   750px  !default;
-$breakpoint-l-min:  1000px  !default;
-$breakpoint-xl-min: 1250px  !default;
-
 // Calculate max width
 $breakpoint-xs-max: $breakpoint-s-min  - 1 !default;
 $breakpoint-s-max:  $breakpoint-m-min  - 1 !default;
 $breakpoint-m-max:  $breakpoint-l-min  - 1 !default;
 $breakpoint-l-max:  $breakpoint-xl-min - 1 !default;
+
 
 /**
  * Calculate column width in %

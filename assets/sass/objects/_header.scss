@@ -42,7 +42,7 @@ nav{
 	    	background: $header-background;
 
 				&.active{
-					background: lightdark($header-background,10%);
+					background: lightdark($header-background,5%);
 				}
 	    	&:hover{
 	    		background: lightdark($header-background,5%);

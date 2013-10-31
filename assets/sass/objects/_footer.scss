@@ -14,7 +14,7 @@ footer{
 	    line-height: 60px;
 
 	    a{
-	    	color: $footer-color;
+	    	color: lightdark($footer-color,10%);
 	    	display: block;
 	    	padding: 0 15px;
 
@@ -23,7 +23,7 @@ footer{
 	    	}
 
 	    	&:hover{
-	    		color: lightdark($footer-color,30%);
+	    		color: $footer-color;
 	    	}
 	    }
 	  }
