@@ -181,3 +181,41 @@
     background-size: $width-1x $height-1x;
   }
 }
+
+// Breakpoint
+@mixin bp($point,$min:true) {
+	@if ($min){
+		@if $point == xs {
+	    @media (min-width: $breakpoint-xs-min) { @content; }
+	  }
+	  @else if $point == s {
+	    @media (min-width: $breakpoint-s-min) { @content; }
+	  }
+	  @else if $point == m {
+	    @media (min-width: $breakpoint-m-min)  { @content; }
+	  }
+	  @else if $point == l {
+	    @media (min-width: $breakpoint-l-min)  { @content; }
+	  }
+	  @else if $point == xl {
+	    @media (min-width: $breakpoint-xl-min)  { @content; }
+	  }
+	}
+	@else{
+		@if $point == xs {
+	    @media (max-width: $breakpoint-xs-max) { @content; }
+	  }
+	  @else if $point == s {
+	    @media (max-width: $breakpoint-s-max) { @content; }
+	  }
+	  @else if $point == m {
+	    @media (max-width: $breakpoint-m-max)  { @content; }
+	  }
+	  @else if $point == l {
+	    @media (max-width: $breakpoint-l-max)  { @content; }
+	  }
+	  @else if $point == xl {
+	    // @media (max-width: $breakpoint-xl-max)  { @content; }
+	  }
+	}
+}

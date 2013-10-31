@@ -67,13 +67,22 @@ $breakpoint-l-max:  $breakpoint-xl-min - 1 !default;
   margin: 0 0;
   padding: 0 ($grid-gutter / 2);
 
-	/* Col in a Col removes padding */
+	// Col in a Col removes padding on first and last element
+	// so parents col padding is used
   & [class*='col-']:first-child{
-		padding-left: 0;
+  	padding-left: 0;
   }
   & [class*='col-']:last-child{
 		padding-right: 0;
   }
+
+	// Remove padding for xs viewport cols in col - because every col is 100%
+  @media (min-width: $breakpoint-xs-min){
+  	& [class*='col-']{
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
 }
 
 /* Create a row without padding */
