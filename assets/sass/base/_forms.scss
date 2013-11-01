@@ -15,8 +15,10 @@ input, textarea, select, button {
   @include font-size($base-font-size);
 
   padding: $form-padding;
+  margin: 0;
   margin-bottom:$base-line-height;
   border: $form-border;
+  vertical-align: middle;
 
 	&:active,
 	&:hover{

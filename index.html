@@ -500,12 +500,33 @@
 					<h4 id="tooltip">Tooltip</h4>
 					<p>Anything can have a <span class="tooltip" data-tooltip="Quick tip: Nice Tooltip">tooltip</span> and even a <span class="tooltip top" data-tooltip="Quick tip: Nice Tooltip">top tooltip</span> and even a <span class="tooltip left" data-tooltip="Quick tip: Nice Tooltip">left tooltip</span> and even a <span class="tooltip right" data-tooltip="Quick tip: Nice Tooltip">right tooltip.</span>  <span class="tooltip" data-tooltip="Lorem ipsum dolor sit amet, consectetur adipisicing elit."><i class="fa fa-info-circle fa-lg"></i></span></p>
 
-					<h4>Popups</h4>
-					<a href="#" class="popup">Popup <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, minus.</span></a>
+					<h4 id="settings">Settings</h4>
+					<p>Settings is a way to show some content, and let it change at the same place by pressing a edit button/link.</p>
 
+					<div class="setting">
+						E-Mail:
+						<span class="set-show">mail@mail.de</span>
+						<span class="set-hide"><input type="text" placeholder="E-Mail"> <button type="submit">Save</button></span>
+						<a class="set-toggle"><i class="fa fa-plus"> Edit</i></a>
+					</div>
 				</div><!-- .col-12 -->
 			</div><!-- .row -->
 		</div><!-- .container -->
+	</section>
+
+	<section class="container">
+		<div class="row">
+			<div class="col-12">
+				<h3>Icons</h3>
+				<p> <a href="http://fontawesome.io/icons/">Font Awesome 4</a> is included. There is also the option to toggle icons on click.</p>
+				<p>Just a normal icon with the <code>class="toggle"</code> and a <code>data-toggle</code> attribute with the icon to change to and any other class than <code>fa</code> or <code>toggle</code>.</p>
+				<p>Like this one: <i class="fa fa-plus toggle fa-2x" data-toggle="fa-minus fa-2x"></i>
+					<code>
+						&lt;i class="fa fa-plus toggle fa-2x" data-toggle="fa-minus fa-2x"&gt;&lt;/i&gt;
+					</code>
+				</p>
+			</div>
+		</div>
 	</section>
 
 

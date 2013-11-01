@@ -1,0 +1,28 @@
+.setting{
+
+	.set-hide{
+		display: none;
+
+		&.set-open{
+			display: inline-block;
+		}
+		&.set-close{
+			display: none;
+		}
+	}
+
+	.set-show{
+		display: inline-block;
+
+		&.set-open{
+			display: inline-block;
+		}
+		&.set-close{
+			display: none;
+		}
+	}
+
+	.set-toggle{
+
+	}
+}
