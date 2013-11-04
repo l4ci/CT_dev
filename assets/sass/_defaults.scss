@@ -38,6 +38,46 @@ $color-info: 									#6eb5cf !default;
 $google-fonts: 								unquote("Source+Sans+Pro:300,400,700,400italic") !default; // false OR unquote("Font+Name:weight,weight")
 
 /**
+ * Font families
+ */
+$font-family-primary:    			'Source Sans Pro', "Helvetica Neue", Arial, sans-serif !default;
+$font-family-secondary:  			'Source Sans Pro', "Helvetica Neue", Arial, sans-serif !default;
+$font-family-input:      			'Source Sans Pro', "Helvetica Neue", Arial, sans-serif !default;
+
+/**
+ * Font sizes
+ */
+$base-font-size:         			16px !default;
+$base-line-height:       			24px !default;
+
+$size-hero:              			96px !default;
+$size-lead:              			32px !default;
+
+$size-h1:                			46px !default;
+$size-h2:                			40px !default;
+$size-h3:                			36px !default;
+$size-h4:                			30px !default;
+$size-h5:                			20px !default;
+$size-h6:                			16px !default;
+
+$size-milli:             			12px !default;
+$size-micro:             			10px !default;
+
+/**
+ * Header
+ */
+$header-background: 					$color-secondary !default;
+$header-height: 							60px !default;
+$header-color: 								#fff !default;
+
+/**
+ * Footer
+ */
+$footer-background: 					$color-black !default;
+$footer-border: 							none !default;
+$footer-color: 								$color-white !default;
+
+/**
  * Forms
  */
 $form-color:            			#666 !default;
@@ -66,47 +106,6 @@ $button-info: 								$color-info !default;
  */
 $selection-background: 				$color-primary !default;
 $selection-text:       				#fff !default;
-
-/**
- * Font families
- */
-$font-family-primary:    			'Source Sans Pro', "Helvetica Neue", Arial, sans-serif !default;
-$font-family-secondary:  			'Source Sans Pro', "Helvetica Neue", Arial, sans-serif !default;
-$font-family-input:      			'Source Sans Pro', "Helvetica Neue", Arial, sans-serif !default;
-
-/**
- * Font sizes
- */
-$base-font-size:         			16px !default;
-$base-line-height:       			24px !default;
-
-$size-hero:              			96px !default;
-$size-lead:              			32px !default;
-
-$size-h1:                			46px !default;
-$size-h2:                			40px !default;
-$size-h3:                			36px !default;
-$size-h4:                			30px !default;
-$size-h5:                			20px !default;
-$size-h6:                			16px !default;
-
-$size-milli:             			12px !default;
-$size-micro:             			10px !default;
-
-
-/**
- * Header
- */
-$header-background: 					$color-secondary !default;
-$header-height: 							60px !default;
-$header-color: 								#fff !default;
-
-/**
- * Footer
- */
-$footer-background: 					$color-black !default;
-$footer-border: 							none !default;
-$footer-color: 								$color-white !default;
 
 /**
  * Tabs
