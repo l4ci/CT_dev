@@ -23,7 +23,6 @@
 	text-align: center;
 	text-decoration: none;
 	text-shadow: none;
-	text-transform: uppercase;
 
 	color: $button-color;
   background: $button-background;
@@ -90,46 +89,90 @@
 
 	// Color Variations
 	&.btn-primary{
-		background: $button-primary;
+		@include contrasted($button-primary,darken($button-primary,80%),lighten($button-primary,80%),70%);
 		border-color: $button-primary;
 
 		&:active,
 		&:hover,
 		&:focus{
-			border-color: lightdark($button-primary,10%);
+			border-color: lightdark($button-primary,5%);
+			background: lightdark($button-primary,5%);
+		}
+	}
+	&.btn-secondary{
+		@include contrasted($button-secondary,darken($button-secondary,80%),lighten($button-secondary,80%),70%);
+		border-color: $button-secondary;
+
+		&:active,
+		&:hover,
+		&:focus{
+			border-color: lightdark($button-secondary,5%);
+			background: lightdark($button-secondary,5%);
+		}
+	}
+	&.btn-tertiary{
+		@include contrasted($button-tertiary,darken($button-tertiary,80%),lighten($button-tertiary,80%),70%);
+		border-color: $button-tertiary;
+
+		&:active,
+		&:hover,
+		&:focus{
+			border-color: lightdark($button-tertiary,5%);
+			background: lightdark($button-tertiary,5%);
+		}
+	}
+	&.btn-primary{
+		@include contrasted($button-primary,darken($button-primary,80%),lighten($button-primary,80%),70%);
+		border-color: $button-primary;
+
+		&:active,
+		&:hover,
+		&:focus{
+			border-color: lightdark($button-primary,5%);
 			background: lightdark($button-primary,5%);
 		}
 	}
 	&.btn-success{
-		background: $button-success;
+		@include contrasted($button-success,darken($button-success,80%),lighten($button-success,80%),70%);
 		border-color: $button-success;
 
 		&:active,
 		&:hover,
 		&:focus{
-			border-color: lightdark($button-success,10%);
+			border-color: lightdark($button-success,5%);
 			background: lightdark($button-success,5%);
 		}
 	}
 	&.btn-danger{
-		background: $button-danger;
+		@include contrasted($button-danger,darken($button-danger,80%),lighten($button-danger,80%),70%);
 		border-color: $button-danger;
 
 		&:active,
 		&:hover,
 		&:focus{
-			border-color: lightdark($button-danger,10%);
+			border-color: lightdark($button-danger,5%);
 			background: lightdark($button-danger,5%);
 		}
 	}
+	&.btn-warning{
+		@include contrasted($button-warning,darken($button-warning,80%),lighten($button-warning,80%),70%);
+		border-color: $button-warning;
+
+		&:active,
+		&:hover,
+		&:focus{
+			border-color: lightdark($button-warning,5%);
+			background: lightdark($button-warning,5%);
+		}
+	}
 	&.btn-info{
-		background: $button-info;
+		@include contrasted($button-info,darken($button-info,80%),lighten($button-info,80%),70%);
 		border-color: $button-info;
 
 		&:active,
 		&:hover,
 		&:focus{
-			border-color: lightdark($button-info,10%);
+			border-color: lightdark($button-info,5%);
 			background: lightdark($button-info,5%);
 		}
 	}
@@ -157,6 +200,20 @@
 		&:focus{
 			border-color: #000;
 			background: rgba(#000,0.1);
+		}
+	}
+
+	&.btn-inverted{
+		background: invert($button-primary);
+		border-color: invert($button-primary);
+
+		@include contrasted(invert($button-primary),#fff,#000);
+
+		&:active,
+		&:hover,
+		&:focus{
+			border-color: invert(lightdark($button-primary,10%));
+			background: invert(lightdark($button-primary,5%));
 		}
 	}
 

@@ -219,3 +219,14 @@
 	  }
 	}
 }
+// Sets the specified background color and calculates a dark or light contrasted text color.
+// The arguments are passed through to the [contrast-color function](#function-contrast-color).
+@mixin contrasted(
+  $background-color,
+  $dark: $color-black,
+  $light: $color-white,
+  $threshold: $contrasted-lightness-threshold
+) {
+  background-color: $background-color;
+  color: contrast-color($background-color, $dark, $light, $threshold);
+}

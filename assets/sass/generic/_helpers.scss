@@ -32,6 +32,21 @@
 .text-hide {
   @include text-hide();
 }
+.text-dim{
+	color: lightdark($color-text,20%);
+}
+.text-darker{
+	color: darken($color-text,20%);
+}
+.text-lighten{
+	color: lighten($color-text,20%);
+}
+.text-upper{
+	text-transform: uppercase;
+}
+.text-lower{
+	text-transform: lowercase;
+}
 /**
  * Flex class for responsive Elements like images on small devices
  */

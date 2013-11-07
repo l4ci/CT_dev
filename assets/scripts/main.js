@@ -124,6 +124,20 @@ jQuery( document ).ready(function( $ ) {
 		}
 	});
 
+	// TOASTER
+	$('.toaster.active').slideDown(300, function(){
+		$(this).removeClass('active').removeAttr('style');
+  });
+
+  $('.toaster.inactive').slideUp(300, function(){
+		$(this).removeClass('inactive').removeAttr('style');
+  });
+
+  $('.toaster .close').click(function(e){
+		e.preventDefault();
+		$(this).parents('.toaster').slideUp();
+  });
+
   // Global Resize Function
 	$(window).resize(function() {
 

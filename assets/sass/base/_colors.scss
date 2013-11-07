@@ -56,3 +56,32 @@
 	border-top: 1px solid lightdark($color-white,20%);
 	border-bottom: 1px solid lightdark($color-white,20%);
 }
+
+.bg-success{
+	@include contrasted($color-success,$color-black,$color-success);
+}
+.border-success{
+	border-top: 1px solid lightdark($color-success,20%);
+	border-bottom: 1px solid lightdark($color-success,20%);
+}
+.bg-danger{
+	@include contrasted($color-danger,$color-black,$color-danger);
+}
+.border-danger{
+	border-top: 1px solid lightdark($color-danger,20%);
+	border-bottom: 1px solid lightdark($color-danger,20%);
+}
+.bg-warning{
+	@include contrasted($color-warning,$color-black,$color-warning);
+}
+.border-warning{
+	border-top: 1px solid lightdark($color-warning,20%);
+	border-bottom: 1px solid lightdark($color-warning,20%);
+}
+.bg-info{
+	@include contrasted($color-info,$color-black,$color-info);
+}
+.border-info{
+	border-top: 1px solid lightdark($color-info,20%);
+	border-bottom: 1px solid lightdark($color-info,20%);
+}

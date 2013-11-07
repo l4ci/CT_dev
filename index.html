@@ -19,6 +19,14 @@
 </head>
 <body id="top">
 
+	<div class="toaster active">
+		<div class="inner container">
+			<h2 class="title">This is a Title</h2>
+			<p>This is a Toaster Message.</p>
+			<div class="close"><i class="fa fa-times-circle-o fa-lg"></i></div>
+		</div>
+	</div>
+
 	<header>
 		<div class="container">
 			<div class="xs-col-12">
@@ -80,16 +88,15 @@
 				<div class="xs-col-12">
 					<h2>Colors</h2>
 
-					<div class="xs-col-12 s-col-2 text-center bg-primary">
+					<div class="xs-col-12 s-col-4 text-center bg-primary">
 						<p class="spacing-s">Primary</p>
 					</div><!-- .col -->
-					<div class="xs-col-12 s-col-2 text-center bg-secondary">
+					<div class="xs-col-12 s-col-4 text-center bg-secondary">
 						<p class="spacing-s">Secondary</p>
 					</div><!-- .col -->
-					<div class="xs-col-12 s-col-2 text-center bg-tertiary">
+					<div class="xs-col-12 s-col-4 text-center bg-tertiary">
 						<p class="spacing-s">Tertiary</p>
 					</div><!-- .col -->
-					<div class="xs-col-12 s-col-1"></div>
 
 					<div class="xs-col-12 s-col-1 text-center bg-black">
 						<p class="spacing-s">Black</p>
@@ -103,10 +110,28 @@
 					<div class="xs-col-12 s-col-1 text-center bg-white">
 						<p class="spacing-s">White</p>
 					</div><!-- .col -->
+
+					<div class="xs-col-12 s-col-4"></div>
+
+					<div class="xs-col-12 s-col-1 text-center bg-success">
+						<p class="spacing-s">Success</p>
+					</div><!-- .col -->
+					<div class="xs-col-12 s-col-1 text-center bg-warning">
+						<p class="spacing-s">Warning</p>
+					</div><!-- .col -->
+					<div class="xs-col-12 s-col-1 text-center bg-danger">
+						<p class="spacing-s">Danger</p>
+					</div>
+					<div class="xs-col-12 s-col-1 text-center bg-info">
+						<p class="spacing-s">Info</p>
+					</div><!-- .col -->
+
 				</div><!-- .col -->
 
 				<div class="xs-col-12">
 					<p class="spacing-m">All colors are automatically generated from only one main color (primary color). Even the darkgrey has a tiny amount of color in it.</p>
+
+					<p class="text-dim">Some dimmed text. Which is 20% lighter or darker. <code>text-lighten, text-darken</code> is also an option.</p>
 				</div><!-- .col -->
 
 			</div><!-- .row -->
@@ -375,7 +400,7 @@
 			<div class="row">
 				<div class="xs-col-12">
 					<h2>Basic Grid System</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, magni, cumque, quia modi at obcaecati beatae distinctio veritatis assumenda placeat omnis incidunt autem suscipit tempora iure et rerum labore neque est expedita! Molestiae, ipsa, maxime, sit, eaque provident eius maiores a accusantium similique eum fuga explicabo esse temporibus rem ut? Placeat, maxime, quam, minima, labore blanditiis ipsa obcaecati autem corporis eligendi fugit vitae quaerat quibusdam atque voluptatem unde harum provident eius illum cumque accusantium consectetur ipsum voluptatum ipsam accusamus ullam voluptate in debitis. Nobis, eius, enim soluta earum error quos quae aperiam similique ducimus cumque tempora suscipit expedita eveniet. Laborum, nobis, saepe, qui recusandae <a href="#">Another Link</a> dolorum molestiae doloremque eum accusantium voluptatibus alias laudantium rem possimus. Et, dolorem, omnis, eum, cumque aut nemo porro animi error asperiores quisquam consequuntur ea cupiditate consequatur deleniti suscipit architecto aperiam eos perferendis ad quidem fugiat repudiandae cum illum ullam tempora recusandae hic molestiae saepe mollitia eligendi reprehenderit atque optio ipsum incidunt similique nihil amet. Harum, laborum, maxime, quibusdam quae quia adipisci minus beatae amet ullam eveniet ducimus corporis voluptates consequatur nisi obcaecati voluptas earum. Cum, nesciunt, molestias iste fugiat laborum esse minima eaque quos ab maiores harum fuga ipsam dolores dolorem architecto cumque earum eos placeat.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, magni, cumque, quia modi at obcaecati beatae distinctio veritatis assumenda placeat omnis incidunt autem suscipit tempora iure et rerum labore neque est expedita! Molestiae, ipsa, maxime, sit, eaque provident eius maiores a accusantium similique eum fuga explicabo esse temporibus rem ut? Placeat, uscipit expedita eveniet. Laborum, nobis, saepe, qui recusandae <a href="#">Another Link</a></p>
 
 					<p>Followed by a simple <code>hr</code></p>
 				</div>
@@ -400,12 +425,14 @@
 				<div class="xs-col-12 m-col-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, architecto perferendis quis excepturi perspiciatis natus consectetur ullam modi ipsam in!</div>
 			</div>
 
+			<hr>
+
 			<div class="row">
 				<div class="xs-col-12 m-col-1">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, est obcaecati itaque officia excepturi sequi inventore sapiente nostrum aut fuga.</p>
+					<p>Lorem ipsum dolor sit amet.</p>
 				</div>
 				<div class="xs-col-12 m-col-2">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, est obcaecati itaque officia excepturi sequi inventore sapiente nostrum aut fuga.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, est obcaecati itaque.</p>
 				</div>
 				<div class="xs-col-12 m-col-4">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, est obcaecati itaque officia excepturi sequi inventore sapiente nostrum aut fuga.</p>
@@ -447,11 +474,14 @@
 
 						<div class="xs-col-12 m-col-6">
 							<h4 id="buttons">Buttons</h4>
-							<input type="submit"><input type="reset"> <a href="" class="btn">Link</a>
+							<input type="submit"><input type="reset"> <a href="" class="btn">Link</a><br>
+
+							<button class="btn-disabled">Disabled</button> <a href="" class="btn">Normal</a> <a href="" class="btn btn-primary">Primary</a> <a href="" class="btn btn-inverted">Inverted</a> <a href="" class="btn btn-secondary">Secondary</a> <a href="" class="btn btn-tertiary">Tertiary</a>
 							<h5>Buttons can be grouped together</h5>
 							<div class="btn-group">
-								<button class="btn-disabled">Disabled</button><a href="" class="btn btn-primary">Primary</a><a href="" class="btn">Normal</a><a href="" class="btn btn-success">Success</a><a href="" class="btn btn-danger">Danger</a><a href="" class="btn btn-info">Info</a>
+								<a href="" class="btn btn-success">Success</a><a href="" class="btn btn-danger">Danger</a><a href="" class="btn btn-warning">Warning</a><a href="" class="btn btn-info">Info</a>
 							</div>
+
 							<h5>Buttons with different sizes</h5>
 							<button class="btn-xs">Extra Small</button>
 							<button class="btn-s">Small</button>

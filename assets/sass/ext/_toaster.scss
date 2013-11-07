@@ -1,0 +1,33 @@
+.toaster{
+	margin: 0 0;
+	display: block;
+	width: 100%;
+	position: absolute;
+	top:0;
+	background: white;
+	z-index: 200;
+
+	&.active{
+		display: none;
+	}
+
+	&.inactive{
+		display: block;
+	}
+
+	.inner{
+		position: relative;
+		padding: ($base-line-height * 2) 0;
+	}
+
+	.title{
+
+	}
+
+	.close{
+		position: absolute;
+		top: $base-line-height;
+		right: $base-line-height;
+		z-index: 210;
+	}
+}

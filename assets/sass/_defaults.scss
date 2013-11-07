@@ -28,9 +28,10 @@ $color-text:             			$color-black !default;
 $color-text-light:       			$color-darkgrey !default;
 $color-background:      			$color-white !default;
 
-$color-success: 							#71cf6a !default;
-$color-danger: 								#cf353c !default;
-$color-info: 									#6eb5cf !default;
+$color-success: 							#A2D5CA !default;
+$color-warning: 							#FFDA77 !default;
+$color-danger: 								#F0907D !default;
+$color-info: 									#88D0E2 !default;
 
 /**
  * Google Webfonts
@@ -97,7 +98,10 @@ $button-border-radius:  			3px !default;
 $button-background: 					#fff !default;
 
 $button-primary: 							$color-primary !default;
+$button-secondary: 						$color-secondary !default;
+$button-tertiary: 						$color-tertiary !default;
 $button-success: 							$color-success !default;
+$button-warning: 							$color-warning !default;
 $button-danger: 							$color-danger !default;
 $button-info: 								$color-info !default;
 
