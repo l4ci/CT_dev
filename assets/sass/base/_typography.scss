@@ -116,15 +116,28 @@ h6,.h6,
 }
 
 // Different Spacings
-.spacing-s{
+.margin-s{
 	margin: ($base-line-height / 2) 0;
 }
-.spacing-m{
+.margin-m{
 	margin: $base-line-height 0;
 }
-.spacing-l{
+.margin-l{
 	margin: ($base-line-height * 2) 0;
 }
-.spacing-xl{
+.margin-xl{
 	margin: ($base-line-height * 3) 0;
+}
+
+.padding-s{
+	padding: ($base-line-height / 2) 0;
+}
+.padding-m{
+	padding: $base-line-height 0;
+}
+.padding-l{
+	padding: ($base-line-height * 2) 0;
+}
+.padding-xl{
+	padding: ($base-line-height * 3) 0;
 }

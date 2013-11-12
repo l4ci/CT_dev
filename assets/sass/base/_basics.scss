@@ -37,7 +37,7 @@ hr{
 	display: block;
 	height:2px;
 	background: $color-text;
-	margin-bottom: $base-line-height;
+	margin: ($base-line-height * 2) 0;
 	border:none;
 }
 img {

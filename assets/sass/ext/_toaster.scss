@@ -1,32 +1,48 @@
 .toaster{
 	margin: 0 0;
-	display: block;
+	display: none;
 	width: 100%;
-	position: absolute;
+	position: static;
 	top:0;
 	background: white;
 	z-index: 200;
 
-	&.active{
-		display: none;
+	.inner{
+		position: relative;
+		padding: ($base-line-height / 2) $grid-gutter;
 	}
 
-	&.inactive{
+	&.toaster--fixed{
+		position: fixed;
+
+		.inner{
+			padding: ($base-line-height / 2) ($grid-gutter / 2);
+		}
+	}
+
+	&.toaster-show,
+	&.toaster--close{
 		display: block;
 	}
 
-	.inner{
-		position: relative;
-		padding: ($base-line-height * 2) 0;
+	&.toaster-hide,
+	&.toaster--open{
+		display: none;
 	}
 
-	.title{
 
+
+
+	.title{
+		@include font-size(18px);
+		font-weight: bold;
+		margin-right: 10px;
 	}
 
 	.close{
+		cursor: pointer;
 		position: absolute;
-		top: $base-line-height;
+		top: 20%;
 		right: $base-line-height;
 		z-index: 210;
 	}
