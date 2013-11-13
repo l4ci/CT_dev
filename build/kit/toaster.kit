@@ -1,0 +1,69 @@
+<!-- @include inc/head.kit -->
+<!-- @include inc/header.kit -->
+
+<div class="toaster toaster--open toaster--fixed bg-info" id="toaster_1">
+		<div class="inner container">
+			<span class="title">Toaster</span>This is a Toaster Message. It can appear on pageload, or be hidden after a pageload. And closed on click.
+
+			<div class="close"><i class="fa fa-times-circle-o fa-lg"></i></div>
+		</div>
+	</div>
+
+
+
+<section class="content bg-grey border-grey" id="toaster">
+	<div class="container">
+		<div class="row">
+			<div class="xs-col-12">
+
+				<h3 id="toaster">Toaster</h3>
+				<p>
+					You see one when reloading the page.
+				</p>
+
+				<div class="row">
+					<div class="xs-col-12 m-col-6">
+						<p>Toaster modifiers:</p>
+						<ul>
+							<li><code>toaster--open</code> -> opens the toaster on load</li>
+							<li><code>toaster--close</code> -> closes the toaster after few seconds after load</li>
+							<li><code>toaster--fixed</code> -> pins the toaster to the most relative element</li>
+						</ul>
+					</div>
+					<div class="xs-col-12 m-col-6">
+						<p>Toaster Links:</p>
+						<ul>
+							<li><code>toaster-toggle</code> -> toggles the toaster with <code>data-toaster="id"</code> on click</li>
+							<li><code>toaster-open</code> -> opens the toaster with <code>data-toaster="id"</code> on click</li>
+							<li><code>toaster-close</code> -> closes the toaster with <code>data-toaster="id"</code> on click</li>
+						</ul>
+					</div>
+				</div>
+
+
+
+				<p>
+					Can also be toggled from a link: <a href="#" class="toaster-toggle" data-toaster="toaster_1">Toggle Top Toaster</a> - <a href="#" class="toaster-toggle" data-toaster="toaster_3">Toggle Toaster 3</a> - <a href="#" class="toaster-open" data-toaster="toaster_2">Open Toaster 2</a> - <a href="#" class="toaster-close" data-toaster="toaster_2">Close Toaster 2</a>
+				</p>
+				<div class="toaster bg-success" id="toaster_2">
+					<div class="inner container">
+						<span class="title">Toaster</span>This is a Toaster Message. It appeared because you clicked the link.
+
+						<div class="close"><i class="fa fa-times-circle-o fa-lg"></i></div>
+					</div>
+				</div>
+
+				<div class="toaster bg-warning" id="toaster_3">
+					<div class="inner container">
+						<span class="title">Toaster</span>This is a Toaster Message. It appeared because you clicked the link.
+
+						<div class="close"><i class="fa fa-times-circle-o fa-lg"></i></div>
+					</div>
+				</div>
+								</div><!-- .col-12 -->
+		</div><!-- .row -->
+	</div><!-- .container -->
+</section>
+
+<!-- @include inc/footer.kit -->
+<!-- @include inc/foot.kit -->

@@ -1,0 +1,168 @@
+<!doctype html>
+<!--[if IEMobile 7 ]> <html dir="ltr" class="no-js iem7"> <![endif]-->
+<!--[if lt IE 7 ]> <html dir="ltr" class="no-js ie6 oldie"> <![endif]-->
+<!--[if IE 7 ]>    <html dir="ltr" class="no-js ie7 oldie"> <![endif]-->
+<!--[if IE 8 ]>    <html dir="ltr" class="no-js ie8 oldie"> <![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html dir="ltr" class="no-js"><!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CT SCSS</title>
+	<link rel="stylesheet" href="assets/css/main.min.css">
+	 <!--[if lt IE 9]>
+	<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+	<!--[if IEMobile]>
+	<script src="assets/js/ie8fix.min.js"></script>
+	<![endif]-->
+</head>
+<body id="top">
+
+	<header>
+		<div class="container">
+			<div class="xs-col-12">
+				<a class="logo text-hide" title="CT SCSS" href="index.html">CT SCSS</a>
+
+				<nav>
+					<a href="#" id="togglemenu" title="Show menu"><i class="fa fa-reorder fa-lg"></i></a>
+
+					<ul class="nav" id="nav">
+
+						<li><a href="index.html" class="active" title="Go home">Home</a></li>
+						<li><a href="grid.html" title="Go to Grid">Grid</a></li>
+
+						<li class="dpd" id="dropdown">
+							<a href="#1" title="Show all lists" class="dpd-toggle">Features <i class="fa fa-angle-down"></i></a>
+							<ul class="dpd-menu">
+								<li class="dpd-header">Basics</li>
+								<li><a href="basics.html#typo" title="Go to Typo">Typo</a></li>
+								<li><a href="basics.html#tables" title="Go to Tables">Tables</a></li>
+								<li><a href="basics.html#icons" title="Go to Icons">Icons</a></li>
+
+								<li class="dpd-header">Modules</li>
+								<li><a href="modules.html" title="Go to Tabs">Tabs</a></li>
+								<li><a href="toaster.html" title="Go to Toaster">Toaster</a></li>
+							</ul>
+						</li>
+
+					</ul>
+
+					<ul class="nav right">
+						<li><a href="" title="Go to profile">Profile</a></li>
+						<li><a href="" title="Log out of your profile">Logout</a></li>
+					</ul>
+				</nav>
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</header>
+
+<section class="content bg-grey border-grey" id="tabs">
+		<div class="container">
+			<div class="row">
+				<div class="xs-col-12">
+
+				<h3>Tabs</h3>
+<ul class="tabs" data-tab="1">
+	<li><a href="#tab1">Tab</a></li>
+	<li><a href="#tab2" class="active">Tab</a></li>
+	<li><a href="#tab3">Tab</a></li>
+</ul>
+<ul class="tabs_content" data-tab="1">
+	<li data-id="#tab1">
+		<div class="row">
+			<div class="col-6"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, atque quod recusandae adipisci provident minus vitae maiores <a href="#">Link in a tab</a> aperiam nihil sit! Ipsa, repudiandae dolore sit laudantium necessitatibus tempora accusamus veniam cum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, illum!</p></div>
+			<div class="col-6"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, quod, reiciendis quas eius magnam natus iure a doloremque corrupti illum. Natus, quas, dolor, quo, praesentium excepturi voluptates eum officiis aperiam laboriosam labore sint ut quis voluptatibus recusandae in. Ratione, nesciunt!</p></div>
+		</div>
+	</li>
+	<li data-id="#tab2" class="active">
+		<p>Tabs for toggling multiple content on the same page. Can contain anything. <code><small>class="active"</small></code> is displayed first.</p>
+	</li>
+	<li data-id="#tab3">
+		<p>Tab 3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, maiores.</p>
+	</li>
+</ul>
+
+				<h3 id="accordion">Accordion</h3>
+<dl class="accordion">
+	<dt>Panel 1</dt>
+	<dd class="active">Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</dd>
+
+	<dt>Panel 2</dt>
+	<dd>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</dd>
+
+	<dt>Panel 3</dt>
+	<dd>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</dd>
+</dl>
+
+				<h4 id="tooltip">Tooltip</h4>
+<p>Anything can have a <span class="tooltip" data-tooltip="Quick tip: Nice Tooltip">tooltip</span> and even a <span class="tooltip top" data-tooltip="Quick tip: Nice Tooltip">top tooltip</span> and even a <span class="tooltip left" data-tooltip="Quick tip: Nice Tooltip">left tooltip</span> and even a <span class="tooltip right" data-tooltip="Quick tip: Nice Tooltip">right tooltip.</span>  <span class="tooltip" data-tooltip="Lorem ipsum dolor sit amet, consectetur adipisicing elit."><i class="fa fa-info-circle fa-lg"></i></span></p>
+
+				<h4 id="settings">Settings</h4>
+<p>Settings is a way to show some content, and let it change at the same place by pressing a edit button/link.</p>
+
+<div class="setting">
+	E-Mail:
+	<span class="set-show">mail@mail.de</span>
+	<span class="set-hide"><input type="text" placeholder="E-Mail"> <button type="submit">Save</button></span>
+	<a class="set-toggle"><i class="fa fa-plus"> Edit</i></a>
+</div>
+
+
+				</div><!-- .col-12 -->
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
+
+	<section class="content bg-secondary" id="sidebar">
+			<div class="container">
+				<div class="row">
+					<div class="col-3">
+
+						<div class="sidebar">
+							<div class="title">Sidebar</div>
+							<ul>
+								<li><a href="">Menü #1</a></li>
+								<li><a href="" class="active">Menü #2</a></li>
+								<li><a href="">Menü #3</a></li>
+							</ul>
+							<div class="title">Sidebar 2</div>
+							<ul>
+								<li><a href="">Menü #1</a></li>
+								<li><a href="">Menü #2</a></li>
+								<li><a href="">Menü #3</a></li>
+							</ul>
+						</div>
+
+					</div>
+					<div class="col-9">
+						<h2>A Sidebar</h2>
+						<p>Sidebar consists of links/anchors to anything you want.</p>
+						<p>Blanditiis, velit, iure consequuntur cupiditate reprehnderit sint autem nesciunt veniam. Eveniet, voluptate, aliquid, quidem, rerum in nisi ea esse sapiente. <a href="#">Link in the sidebar</a> eum inventore ut quae quam libero ipsa perferendis cum temporibus porro sed eos sint. Ullam, aspernatur, rerum perferendis voluptatum aliquid sit eius doloremque quis possimus dolorum ex nostrum perspiciatis consequuntur neque alias cupiditate modi vitae illo sed quas deleniti nisi provident delectus explicabo magni velit earum consectetur optio obcaecati quidem beatae odit voluptatibus labore inventore repudiandae maxime vel. Maxime, reprehenderit velit vel. Totam, a, nisi, repellendus, voluptatibus iste neque in perferendis vitae eveniet vero temporibus fuga minus laborum corrupti necessitatibus magni.</p>
+					</div>
+				</div><!-- .row -->
+			</div><!-- .container -->
+	</section>
+
+<footer id="footer">
+		<div class="container">
+			<div class="row">
+			<div class="xs-col-12 s-col-6">
+				<ul class="footer xs-align-center s-align-left">
+					<li><a href="">Copyright &copy; <?=date('Y')?> by mowe-design.de</a></li>
+				</ul>
+			</div>
+			<div class="xs-col-12 s-col-6">
+				<ul class="footer xs-align-center s-align-right">
+					<li><a href="">Impressum</a></li>
+					<li><a href="#top" class="scroll">Top</a></li>
+				</ul>
+			</div>
+			</div>
+		</div><!-- .container -->
+	</footer>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="assets/js/main.min.js"></script>
+
+</body>
+</html>

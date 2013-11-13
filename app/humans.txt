@@ -1,0 +1,27 @@
+/* humanstxt.org/ */
+/* The humans responsible & technology colophon */
+
+/*
+                                                          888                   d8b
+                                                          888                   Y8P
+                                                          888
+88888b.d88b.   .d88b.  888  888  888  .d88b.          .d88888  .d88b.  .d8888b  888  .d88b.  88888b.
+888 "888 "88b d88""88b 888  888  888 d8P  Y8b        d88" 888 d8P  Y8b 88K      888 d88P"88b 888 "88b
+888  888  888 888  888 888  888  888 88888888 888888 888  888 88888888 "Y8888b. 888 888  888 888  888
+888  888  888 Y88..88P Y88b 888 d88P Y8b.            Y88b 888 Y8b.          X88 888 Y88b 888 888  888
+888  888  888  "Y88P"   "Y8888888P"   "Y8888          "Y88888  "Y8888   88888P' 888  "Y88888 888  888
+                                                                                         888
+                                                                                    Y8b d88P
+                                                                                     "Y88P"
+*/
+
+/* TEAM */
+  Web Architect: Volker Otto
+  Twitter: @mowedesign
+  Web: http://www.mowe-design.de
+  Location: Hamburg, Germany
+
+/* SITE */
+  Doctype: HTML5
+  IDE: Sublime Text, Photoshop
+  Components: Normalize.css, Modernizr, jQuery
