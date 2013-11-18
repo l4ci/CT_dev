@@ -26,6 +26,18 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/build\/sass\/ext\/_detach.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/build\/sass\/ext\/_detach.scss",
+      "outputStyle" : 2,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/app\/assets\/css\/_detach.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
     "\/build\/kit\/inc\/_head.kit" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -150,15 +162,6 @@
       "outputAbbreviatedPath" : "\/app\/assets\/js\/_toaster.min.js",
       "fileType" : 64
     },
-    "\/build\/kit\/inc\/_foot.kit" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/build\/kit\/inc\/_foot.kit",
-      "outputAbbreviatedPath" : "\/app\/_foot.html",
-      "fileType" : 65536
-    },
     "\/build\/js\/ext\/_navigation.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -170,6 +173,15 @@
       "outputAbbreviatedPath" : "\/app\/assets\/js\/_navigation.min.js",
       "fileType" : 64
     },
+    "\/build\/kit\/inc\/_foot.kit" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/build\/kit\/inc\/_foot.kit",
+      "outputAbbreviatedPath" : "\/app\/_foot.html",
+      "fileType" : 65536
+    },
     "\/build\/sass\/generic\/_helpers.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -179,18 +191,6 @@
       "outputStyle" : 3,
       "shouldRunBless" : 0,
       "outputAbbreviatedPath" : "\/app\/assets\/css\/_helpers.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
-    "\/build\/sass\/ext\/_tabs.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/build\/sass\/ext\/_tabs.scss",
-      "outputStyle" : 3,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/app\/assets\/css\/_tabs.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -205,6 +205,18 @@
       "outputAbbreviatedPath" : "\/app\/assets\/js\/ie8fix.min.js",
       "fileType" : 64
     },
+    "\/build\/sass\/ext\/_tabs.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/build\/sass\/ext\/_tabs.scss",
+      "outputStyle" : 3,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/app\/assets\/css\/_tabs.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
     "\/build\/kit\/inc\/_header.kit" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -213,6 +225,18 @@
       "inputAbbreviatedPath" : "\/build\/kit\/inc\/_header.kit",
       "outputAbbreviatedPath" : "\/app\/_header.html",
       "fileType" : 65536
+    },
+    "\/build\/sass\/ext\/_fixedtotop.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/build\/sass\/ext\/_fixedtotop.scss",
+      "outputStyle" : 2,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/app\/assets\/css\/_fixedtotop.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
     "\/build\/kit\/inc\/_footer.kit" : {
       "ignoreWasSetByUser" : 0,
@@ -268,6 +292,15 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/build\/kit\/modules\/_settings.kit" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/build\/kit\/modules\/_settings.kit",
+      "outputAbbreviatedPath" : "\/app\/_settings.html",
+      "fileType" : 65536
+    },
     "\/build\/js\/ext\/_toggleicons.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -279,13 +312,35 @@
       "outputAbbreviatedPath" : "\/app\/assets\/js\/_toggleicons.min.js",
       "fileType" : 64
     },
-    "\/build\/kit\/modules\/_settings.kit" : {
+    "\/build\/js\/ext\/_accordion.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/build\/kit\/modules\/_settings.kit",
-      "outputAbbreviatedPath" : "\/app\/_settings.html",
+      "inputAbbreviatedPath" : "\/build\/js\/ext\/_accordion.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/app\/assets\/js\/_accordion.min.js",
+      "fileType" : 64
+    },
+    "\/build\/js\/ext\/_fixedtotop.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/build\/js\/ext\/_fixedtotop.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/app\/assets\/js\/_fixedtotop.min.js",
+      "fileType" : 64
+    },
+    "\/build\/kit\/basics\/_icons.kit" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/build\/kit\/basics\/_icons.kit",
+      "outputAbbreviatedPath" : "\/app\/_icons.html",
       "fileType" : 65536
     },
     "\/build\/sass\/base\/_colors.scss" : {
@@ -299,26 +354,6 @@
       "outputAbbreviatedPath" : "\/app\/assets\/css\/_colors.css",
       "fileType" : 4,
       "debugStyle" : 0
-    },
-    "\/build\/js\/ext\/_accordion.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/build\/js\/ext\/_accordion.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/app\/assets\/js\/_accordion.min.js",
-      "fileType" : 64
-    },
-    "\/build\/kit\/basics\/_icons.kit" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/build\/kit\/basics\/_icons.kit",
-      "outputAbbreviatedPath" : "\/app\/_icons.html",
-      "fileType" : 65536
     },
     "\/app\/assets\/js\/main.min.js" : {
       "ignoreWasSetByUser" : 0,
@@ -396,7 +431,7 @@
       "debugStyle" : 0
     },
     "\/build\/js\/main.js" : {
-      "ignoreWasSetByUser" : 1,
+      "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
@@ -417,6 +452,17 @@
       "outputAbbreviatedPath" : "\/app\/assets\/css\/_tooltip.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/build\/js\/ext\/_detach.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/build\/js\/ext\/_detach.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/app\/assets\/js\/_detach.min.js",
+      "fileType" : 64
     },
     "\/build\/kit\/basics\/_form.kit" : {
       "ignoreWasSetByUser" : 0,
@@ -519,6 +565,15 @@
       "outputAbbreviatedPath" : "\/app\/_accordion.html",
       "fileType" : 65536
     },
+    "\/build\/kit\/modules\/_fixedtotop.kit" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/build\/kit\/modules\/_fixedtotop.kit",
+      "outputAbbreviatedPath" : "\/app\/_fixedtotop.html",
+      "fileType" : 65536
+    },
     "\/build\/kit\/modules\/_sidebar.kit" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -552,15 +607,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/build\/kit\/modules\/_tooltip.kit" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/build\/kit\/modules\/_tooltip.kit",
-      "outputAbbreviatedPath" : "\/app\/_tooltip.html",
-      "fileType" : 65536
-    },
     "\/build\/sass\/ext\/_setting.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -573,13 +619,13 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/build\/kit\/toaster.kit" : {
+    "\/build\/kit\/modules\/_tooltip.kit" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/build\/kit\/toaster.kit",
-      "outputAbbreviatedPath" : "\/app\/toaster.html",
+      "inputAbbreviatedPath" : "\/build\/kit\/modules\/_tooltip.kit",
+      "outputAbbreviatedPath" : "\/app\/_tooltip.html",
       "fileType" : 65536
     },
     "\/app\/assets\/js\/ie8fix.min.js" : {
@@ -593,28 +639,14 @@
       "outputAbbreviatedPath" : "\/app\/assets\/js\/ie8fix.min.min.js",
       "fileType" : 64
     },
-    "\/build\/js\/ext\/_fixedheader.js" : {
+    "\/build\/kit\/toaster.kit" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/build\/js\/ext\/_fixedheader.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/app\/assets\/js\/_fixedheader.min.js",
-      "fileType" : 64
-    },
-    "\/build\/sass\/generic\/_mixins.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/build\/sass\/generic\/_mixins.scss",
-      "outputStyle" : 3,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/app\/assets\/css\/_mixins.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/build\/kit\/toaster.kit",
+      "outputAbbreviatedPath" : "\/app\/toaster.html",
+      "fileType" : 65536
     },
     "\/build\/sass\/objects\/_content.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -636,6 +668,18 @@
       "inputAbbreviatedPath" : "\/app\/index.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
+    },
+    "\/build\/sass\/generic\/_mixins.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/build\/sass\/generic\/_mixins.scss",
+      "outputStyle" : 3,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/app\/assets\/css\/_mixins.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
     "\/build\/sass\/ext\/_toaster.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -671,8 +715,8 @@
       "fileType" : 65536
     },
     "\/build\/kit\/modules.kit" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/build\/kit\/modules.kit",

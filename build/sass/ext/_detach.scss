@@ -1,0 +1,9 @@
+.detach{
+
+	&.detach--on{
+		position: fixed;
+		z-index: 50;
+		top: 0;
+		bottom: auto;
+	}
+}
