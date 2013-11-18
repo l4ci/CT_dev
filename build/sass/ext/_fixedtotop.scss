@@ -1,29 +1,11 @@
 .fixedtotop{
-	-webkit-transition: -webkit-transform .2s,opacity 0 .3s;
-	-moz-transition: -moz-transform .2s,opacity 0 .3s;
-	-o-transition: -o-transform .2s,opacity 0 .3s;
-	transition: transform .2s,opacity 0 .3s;
-
 
 	&.fixedtotop--pinned{
-		opacity: 1;
-		@include vendor(transform,translate(0,0));
-
-		-webkit-transition: -webkit-transform .2s,opacity 0 .3s;
-		-moz-transition: -moz-transform .2s,opacity 0 .3s;
-		-o-transition: -o-transform .2s,opacity 0 .3s;
-		transition: transform .2s,opacity 0 .3s;
+		top:0;
 	}
 
 	&.fixedtotop--unpinned{
-		opacity: 0;
-		@include vendor(transform,translate(0,-60px));
-
-		-webkit-transition: -webkit-transform .2s,opacity 0 .3s;
-		-moz-transition: -moz-transform .2s,opacity 0 .3s;
-		-o-transition: -o-transform .2s,opacity 0 .3s;
-		transition: transform .2s,opacity 0 .3s;
-		//@include vendor(transition,'transform .2s,opacity 0 .3s');
+		top: -($header-height);
 	}
 }
 

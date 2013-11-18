@@ -2,6 +2,14 @@ header{
 	background: $header-background;
 	@extend .clearfix;
 	width: 100%;
+	z-index: 50;
+
+	@if ($header-position == "fixed"){
+		position: $header-position;
+		top: 0;
+	}else{
+		position: $header-position;
+	}
 
 	.logo{
 		display: block;

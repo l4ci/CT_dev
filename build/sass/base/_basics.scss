@@ -24,6 +24,11 @@ body {
   font-family: $font-family-primary;
   background: $color-background;
   color: $color-text;
+
+  // Fixed header spacing
+  @if ($header-position == "fixed"){
+		padding-top: $header-height;
+	}
 }
 
 a {

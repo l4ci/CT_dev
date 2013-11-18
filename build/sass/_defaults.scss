@@ -68,6 +68,7 @@ $size-micro:             			10px !default;
 /**
  * Header
  */
+$header-position: 						fixed !default; // fixed or static
 $header-background: 					$color-secondary !default;
 $header-height: 							60px !default;
 $header-color: 								#fff !default;

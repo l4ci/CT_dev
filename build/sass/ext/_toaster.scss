@@ -9,14 +9,14 @@
 
 	.inner{
 		position: relative;
-		padding: ($base-line-height / 2) $grid-gutter;
+		padding: ($base-line-height / 2) ($grid-gutter * 2) ($base-line-height / 2) $grid-gutter;
 	}
 
 	&.toaster--fixed{
 		position: fixed;
 
 		.inner{
-			padding: ($base-line-height / 2) ($grid-gutter / 2);
+			padding: ($base-line-height / 2) ($grid-gutter * 2) ($base-line-height / 2) ($grid-gutter / 2);
 		}
 	}
 
@@ -43,7 +43,7 @@
 		cursor: pointer;
 		position: absolute;
 		top: 20%;
-		right: $base-line-height;
+		right: $grid-gutter;
 		z-index: 210;
 	}
 }
