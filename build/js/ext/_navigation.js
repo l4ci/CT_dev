@@ -1,3 +1,8 @@
+/**
+ * NAVIGATION
+ *
+ * Responsive Navigation with Menu Icon
+ **/
 jQuery(document).ready(function($) {
 	// NAVIGATION TOGGLE
 	$('#togglemenu').click(function(e){

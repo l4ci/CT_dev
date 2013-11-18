@@ -1,3 +1,8 @@
+/**
+ * ANIMATE SCROLL
+ *
+ * Animates each .scroll class
+ **/
 jQuery(document).ready(function($) {
 	// Animate scrolling
 	$(".scroll").click(function(e){

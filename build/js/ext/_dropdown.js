@@ -1,3 +1,8 @@
+/**
+ * DROPDOWN
+ *
+ * Dropdow Menü with Icon
+ **/
 jQuery(document).ready(function($) {
 	// Dropdown
 	$('.dpd .dpd-toggle').click(function(e){

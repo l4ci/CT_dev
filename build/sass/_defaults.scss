@@ -3,6 +3,7 @@
  */
 $grid-columns : 							12 !default; 	// 12, 16, whatever you like
 $grid-gutter  : 							30px !default; 	// px only here
+$grid-row-margin: 						1rem !default;
 
 // Define min width
 $breakpoint-xs-min:    				0px !default;

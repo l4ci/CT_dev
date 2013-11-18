@@ -1,3 +1,8 @@
+/**
+ * SETTING
+ *
+ * Simple toggle/hide settings with icon
+ **/
 jQuery(document).ready(function($) {
 	// Setting
 	$('.setting .set-toggle').click(function(e){

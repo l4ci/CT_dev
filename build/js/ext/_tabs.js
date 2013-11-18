@@ -1,3 +1,8 @@
+/**
+ * TABS
+ *
+ * Tabs, what more to say?
+ **/
 jQuery(document).ready(function($) {
 	// TABS
 	$('.tabs li a').click(function(e){

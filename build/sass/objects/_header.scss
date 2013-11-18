@@ -1,6 +1,7 @@
 header{
 	background: $header-background;
 	@extend .clearfix;
+	width: 100%;
 
 	.logo{
 		display: block;
@@ -10,6 +11,12 @@ header{
 		background: url('../img/logo.png') no-repeat;
 		background-size:100%;
 		float: left;
+	}
+
+	&.fixed{
+		position: fixed;
+		top: 0;
+		z-index: 50;
 	}
 }
 

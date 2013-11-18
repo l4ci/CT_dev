@@ -1,3 +1,8 @@
+/**
+ * TOASTER
+ *
+ * Show/Hide on pageload/click with various options
+ **/
 jQuery(document).ready(function($) {
 	// TOASTER
 

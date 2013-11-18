@@ -1,3 +1,8 @@
+/**
+ * TOGGLE ICONS
+ *
+ * Simple toggle icons, that change on click
+ **/
 jQuery(document).ready(function($) {
 	// Toggle Icons
 	$('.fa.toggle').click(function(){
