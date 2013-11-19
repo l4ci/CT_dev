@@ -408,16 +408,14 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/build\/js\/ext\/_settings.js" : {
+    "\/app\/toaster.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/build\/js\/ext\/_settings.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/app\/assets\/js\/_settings.min.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/app\/toaster.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/app\/assets\/img\/logo.png" : {
       "ignoreWasSetByUser" : 0,
@@ -442,14 +440,16 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/app\/toaster.html" : {
+    "\/build\/js\/ext\/_settings.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/toaster.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/build\/js\/ext\/_settings.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/app\/assets\/js\/_settings.min.js",
+      "fileType" : 64
     },
     "\/build\/js\/main.js" : {
       "ignoreWasSetByUser" : 0,
@@ -524,14 +524,17 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/build\/kit\/basics.kit" : {
+    "\/build\/sass\/base\/_tables.scss" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/build\/kit\/basics.kit",
-      "outputAbbreviatedPath" : "\/app\/basics.html",
-      "fileType" : 65536
+      "inputAbbreviatedPath" : "\/build\/sass\/base\/_tables.scss",
+      "outputStyle" : 2,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/app\/assets\/css\/_tables.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
     "\/build\/lib\/respond.js\/respond.js" : {
       "ignoreWasSetByUser" : 0,
@@ -553,17 +556,14 @@
       "outputAbbreviatedPath" : "\/app\/index.html",
       "fileType" : 65536
     },
-    "\/build\/sass\/base\/_tables.scss" : {
+    "\/build\/kit\/basics.kit" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/build\/sass\/base\/_tables.scss",
-      "outputStyle" : 2,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/app\/assets\/css\/_tables.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/build\/kit\/basics.kit",
+      "outputAbbreviatedPath" : "\/app\/basics.html",
+      "fileType" : 65536
     },
     "\/build\/sass\/ext\/_dropdown.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -628,15 +628,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/build\/kit\/modules\/_tooltip.kit" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/build\/kit\/modules\/_tooltip.kit",
-      "outputAbbreviatedPath" : "\/app\/_tooltip.html",
-      "fileType" : 65536
-    },
     "\/build\/sass\/ext\/_setting.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -648,6 +639,15 @@
       "outputAbbreviatedPath" : "\/app\/assets\/css\/_setting.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/build\/kit\/modules\/_tooltip.kit" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/build\/kit\/modules\/_tooltip.kit",
+      "outputAbbreviatedPath" : "\/app\/_tooltip.html",
+      "fileType" : 65536
     },
     "\/build\/kit\/toaster.kit" : {
       "ignoreWasSetByUser" : 0,
@@ -669,15 +669,6 @@
       "outputAbbreviatedPath" : "\/app\/assets\/js\/ie8fix.min.min.js",
       "fileType" : 64
     },
-    "\/app\/index.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/index.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/build\/sass\/objects\/_content.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -689,6 +680,15 @@
       "outputAbbreviatedPath" : "\/app\/assets\/css\/_content.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/app\/index.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/app\/index.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/build\/sass\/generic\/_mixins.scss" : {
       "ignoreWasSetByUser" : 0,
